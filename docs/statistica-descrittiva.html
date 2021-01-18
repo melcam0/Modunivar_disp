@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capitolo 1 Statistica descrittiva | Dispense modulo univariata</title>
+  <meta name="description" content="Capitolo 1 Statistica descrittiva | Dispense modulo univariata" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capitolo 1 Statistica descrittiva | Dispense modulo univariata" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="Immagini/Modunivar.jpg" />
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capitolo 1 Statistica descrittiva | Dispense modulo univariata" />
+  
+  
+  <meta name="twitter:image" content="Immagini/Modunivar.jpg" />
+
+<meta name="author" content="Giorgio Marrubini e Camillo Melzi" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="Immagini/modunivar.ico" type="image/x-icon" />
+<link rel="prev" href="glossario.html"/>
+<link rel="next" href="bibliografia.html"/>
+<script src="libs/header-attrs-2.5/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">MODUNIVAR</a></li>
+
+<li class="divider"></li>
+<li><a href="index.html#section"></a></li>
+<li class="chapter" data-level="" data-path="glossario.html"><a href="glossario.html"><i class="fa fa-check"></i>Glossario minimo</a></li>
+<li class="chapter" data-level="1" data-path="statistica-descrittiva.html"><a href="statistica-descrittiva.html"><i class="fa fa-check"></i><b>1</b> Statistica descrittiva</a></li>
+<li class="chapter" data-level="" data-path="bibliografia.html"><a href="bibliografia.html"><i class="fa fa-check"></i>Bibliografia</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Dispense modulo univariata</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="statistica-descrittiva" class="section level1" number="1">
+<h1><span class="header-section-number">Capitolo 1</span> Statistica descrittiva</h1>
+<p>Si illustrano nel seguito alcuni strumenti della statistica descrittiva di uso molto comune per visualizzare e riassumere dati.</p>
+<p>Dal menu “Dati” alla voce “Esempi Master” si può scegliere il file “Resa estrattiva” e vedere cosa contiene. Si tratta di una serie di dati, ottenuti dall’analisi di estratti vegetali. Il dataset consiste in 10 misure della resa estrattiva di un metodo di isolamento di polifenoli da infusi acquosi di Dittamo cretese (Origanum dictamus, meglio noto come Cretan tea), una pianta aromatica e medicinale tradizionalmente considerata un rimedio generale per molti disturbi (dalla stanchezza ai disturbi digestivi, alla capacità di agire come disinfettante e cicatrizzante).</p>
+<div class="figure" style="text-align: center"><span id="fig:sd1"></span>
+<img src="Immagini/Descrittiva/1_Resa_estrattiva.png" alt="Il dataset Resa estrattiva tra gli esempi didattici a disposizione per le lezioni del Master ECAIF" width="100%" />
+<p class="caption">
+Figura 1.1: Il dataset Resa estrattiva tra gli esempi didattici a disposizione per le lezioni del Master ECAIF
+</p>
+</div>
+<p>La prima funzione descrittiva che di solito si usa è quella di mettere i dati in una tabella: nel menu “statistica descrittiva” la voce “Vedi dati” consente di stampare in una tabella le misure.</p>
+<div class="figure" style="text-align: center"><span id="fig:sd2"></span>
+<img src="Immagini/Descrittiva/2_TabelladatiResa%20estrattiva.png" alt="Il dataset Resa estrattiva rappresentato in forma di tabella" width="100%" />
+<p class="caption">
+Figura 1.2: Il dataset Resa estrattiva rappresentato in forma di tabella
+</p>
+</div>
+<p>L’informazione fornita da dieci numeri presentati in forma di elenco però può non essere molto utile, e pertanto spesso si preferisce presentare sia i valori grezzi in forma analitica sia i descrittori di posizione e dispersione dello stesso gruppo di dati. Selezionando la voce “Summary” dal menu “Statistica descrittiva”, la funzione produce la stampa di media aritmetica (mean), deviazione standard (sd), intervallo interquartile (Inter-Quartile Range, IQR, differenza tra il terzo e il primo quartile, v. Glossario), valore minimo della serie (0%), valore al primo quartile (25%), mediana (50%, secondo quartile), valore al terzo quartile (75%), massimo (100%) e numero di dati su cui si calcola la statistica.</p>
+<div class="figure" style="text-align: center"><span id="fig:sd3"></span>
+<img src="Immagini/Descrittiva/3_SummaryResa_estrattiva.png" alt="Indicatori di posizione e dispersione calcolabili dal dataset Resa estrattiva" width="100%" />
+<p class="caption">
+Figura 1.3: Indicatori di posizione e dispersione calcolabili dal dataset Resa estrattiva
+</p>
+</div>
+<p>Il primo strumento grafico di immediata comprensione si ottiene con il comando “Graf. dispersione” che stampa il grafico a punti cosiddetto “a dispersione”, per visualizzare i dati così come sono.
+Nel grafico, le rese estrattive si leggono sulle ordinate, mentre in ascissa compare il numero di ordinamento dei dati. La linea blu orizzontale indica il valore della media.</p>
+<div class="figure" style="text-align: center"><span id="fig:sd4"></span>
+<img src="Immagini/Descrittiva/4_Graf_dispers%20Resa_estrattiva.png" alt="Grafico di dispersione dei dati di Resa estrattiva" width="100%" />
+<p class="caption">
+Figura 1.4: Grafico di dispersione dei dati di Resa estrattiva
+</p>
+</div>
+<p>Il grafico a punti può essere modificato introducendo le “etichette dei dati” che, in questo caso, coincidono con il numero di ordinamento dei dati.</p>
+<p>Nelle relazioni con dati, è molto frequente incontrare grafici a barre, chiamati Istogrammi. Per ottenere una rappresentazione dei dati del dataset in forma di istogramma è sufficiente selezionare la voce “Istogramma” del menu “Statistica descrittiva”. L’istogramma è un grafico in cui in ordinata sono riportate le rese raggruppate in intervalli definiti attrverso il comando “larghezza barra”. In ordinata invece è possibile scegliere la forma dei dati da riportare tra tre possibilità: il conteggio dei dati che cadono negli intervalli di resa identificati attraverso il comando “larghezza barra”, la percentuale del numero di questi dati sul totale dei dati raccolti (percentuale = 100·numero di dati che cadono nell’intervallo dato/10) e la loro densità (densità = area della barra = percentuale/100).</p>
+<div class="figure" style="text-align: center"><span id="fig:sd5"></span>
+<img src="Immagini/Descrittiva/5_IstogResaestrattiva.png" alt="Istogrammi dei dati di Resa estrattiva. In alto, la larghezza delle barre è la minima possibile; in basso la larghezza delle barre è la massima possibile" width="100%" />
+<p class="caption">
+Figura 1.5: Istogrammi dei dati di Resa estrattiva. In alto, la larghezza delle barre è la minima possibile; in basso la larghezza delle barre è la massima possibile
+</p>
+</div>
+<p>Un altro importante strumento grafico è il “box-and-whiskers plot” (o boxplot), che si ottiene usando la funzione Box plot del menu “Statistica descrittiva”. Il boxplot rappresenta in modo compatto in un unico grafico i maggiori descrittori dei dati.</p>
+<div class="figure" style="text-align: center"><span id="fig:sd6"></span>
+<img src="Immagini/Descrittiva/6_BoxplotRestrattiva.png" alt="Boxplot dei dati di Resa estrattiva" width="100%" />
+<p class="caption">
+Figura 1.6: Boxplot dei dati di Resa estrattiva
+</p>
+</div>
+<p>In ascissa compare un numero di ordine della serie di dati (in questo abbiamo una unica serie e viene assegnato di default il valore “0” in ascissa), mentre in ordinata sono riportati i valori di resa etrattiva. La “scatola” si estende dal primo al terzo quartile, la riga centrale rappresenta la mediana e i baffi vanno dal valore minimo al valore massimo. I baffi permettono anche di identificare valori anomali (dati aberranti, outliers). Una convenzione grafica accettata è che i dati che cadono fuori dalla scatola ad una distanza di almeno 1.5 volte la dimensione della scatola siano da considerare con sospetto e siano soggetti a verifica con opportuni test per gli outliers (test di Dixon, Grubbs, Cochran o altri).
+Si osservi che il valore 1.5 è definito in automatico arbitrariamente dalla routine e nei software di statistica “aperti” può essere modificato.</p>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="glossario.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="bibliografia.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": null,
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": null,
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["dispense_modunivar.pdf"],
+"toc": {
+"collapse": "section"
+},
+"info": false,
+"search": true
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
