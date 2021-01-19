@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capitolo 4 Analisi della Varianza | Dispense modulo univariata</title>
+  <meta name="description" content="Capitolo 4 Analisi della Varianza | Dispense modulo univariata" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capitolo 4 Analisi della Varianza | Dispense modulo univariata" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="Immagini/Modunivar.jpg" />
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capitolo 4 Analisi della Varianza | Dispense modulo univariata" />
+  
+  
+  <meta name="twitter:image" content="Immagini/Modunivar.jpg" />
+
+<meta name="author" content="Giorgio Marrubini e Camillo Melzi" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="Immagini/modunivar.ico" type="image/x-icon" />
+<link rel="prev" href="regressione-lineare-semplice.html"/>
+<link rel="next" href="bibliografia.html"/>
+<script src="libs/header-attrs-2.5/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">MODUNIVAR</a></li>
+
+<li class="divider"></li>
+<li><a href="index.html#section"></a></li>
+<li class="chapter" data-level="" data-path="glossario.html"><a href="glossario.html"><i class="fa fa-check"></i>Glossario minimo</a></li>
+<li class="chapter" data-level="1" data-path="statistica-descrittiva.html"><a href="statistica-descrittiva.html"><i class="fa fa-check"></i><b>1</b> Statistica descrittiva</a></li>
+<li class="chapter" data-level="2" data-path="statistica-inferenziale.html"><a href="statistica-inferenziale.html"><i class="fa fa-check"></i><b>2</b> Statistica inferenziale</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="statistica-inferenziale.html"><a href="statistica-inferenziale.html#stime-della-media"><i class="fa fa-check"></i><b>2.1</b> Stime della media</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="statistica-inferenziale.html"><a href="statistica-inferenziale.html#una-popolazione-gaussiana"><i class="fa fa-check"></i><b>2.1.1</b> Una popolazione gaussiana</a></li>
+<li class="chapter" data-level="2.1.2" data-path="statistica-inferenziale.html"><a href="statistica-inferenziale.html#due-popolazioni-gaussiane-campioni-accoppiati"><i class="fa fa-check"></i><b>2.1.2</b> Due popolazioni gaussiane: campioni accoppiati</a></li>
+<li class="chapter" data-level="2.1.3" data-path="statistica-inferenziale.html"><a href="statistica-inferenziale.html#due-popolazioni-gaussiane-campioni-indipendenti"><i class="fa fa-check"></i><b>2.1.3</b> Due popolazioni gaussiane: campioni indipendenti</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="regressione-lineare-semplice.html"><a href="regressione-lineare-semplice.html"><i class="fa fa-check"></i><b>3</b> Regressione lineare semplice</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="regressione-lineare-semplice.html"><a href="regressione-lineare-semplice.html#stima-dei-parametri-beta_0-e-beta_1"><i class="fa fa-check"></i><b>3.1</b> Stima dei parametri <span class="math inline">\(\beta_0\)</span> e <span class="math inline">\(\beta_1\)</span></a></li>
+<li class="chapter" data-level="3.2" data-path="regressione-lineare-semplice.html"><a href="regressione-lineare-semplice.html#significatività-dei-coefficienti"><i class="fa fa-check"></i><b>3.2</b> Significatività dei coefficienti</a></li>
+<li class="chapter" data-level="3.3" data-path="regressione-lineare-semplice.html"><a href="regressione-lineare-semplice.html#previsione-del-modello"><i class="fa fa-check"></i><b>3.3</b> Previsione del modello</a></li>
+<li class="chapter" data-level="3.4" data-path="regressione-lineare-semplice.html"><a href="regressione-lineare-semplice.html#verifica-delle-ipotesi-1"><i class="fa fa-check"></i><b>3.4</b> Verifica delle ipotesi</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="analisi-della-varianza.html"><a href="analisi-della-varianza.html"><i class="fa fa-check"></i><b>4</b> Analisi della Varianza</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="analisi-della-varianza.html"><a href="analisi-della-varianza.html#analisi-della-varianza-a-un-fattore"><i class="fa fa-check"></i><b>4.1</b> Analisi della varianza a un fattore</a></li>
+<li class="chapter" data-level="4.2" data-path="analisi-della-varianza.html"><a href="analisi-della-varianza.html#analisi-della-varianza-a-due-fattori"><i class="fa fa-check"></i><b>4.2</b> Analisi della varianza a due fattori</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="bibliografia.html"><a href="bibliografia.html"><i class="fa fa-check"></i>Bibliografia</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Dispense modulo univariata</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="analisi-della-varianza" class="section level1" number="4">
+<h1><span class="header-section-number">Capitolo 4</span> Analisi della Varianza</h1>
+<div id="analisi-della-varianza-a-un-fattore" class="section level2" number="4.1">
+<h2><span class="header-section-number">4.1</span> Analisi della varianza a un fattore</h2>
+<p>Consideriamo il dataset <em>Collirio</em></p>
+<pre><code>##   Nessuna    A.R    A5s   A10s
+## 1  0.0285 0.0377 0.0677 0.0920
+## 2  0.0304 0.0346 0.0604 0.0934
+## 3  0.0295 0.0369 0.0673 0.0948
+## 4  0.0318 0.0439 0.0674 0.1011
+## 5  0.0303 0.0485 0.1073 0.0833
+## 6  0.0315 0.0488 0.1138 0.0909
+## 7  0.0322 0.0648 0.1210 0.0987
+## 8  0.0315 0.0743 0.1330 0.1080</code></pre>
+<p>che consiste in 32 misure sperimentali (<em>Pesata</em>) della massa di una goccia di un collirio preparato prima dell’uso in 4
+modi diversi, indicati nelle colonne della tabella; questa ultima variabile (<em>Preparazione</em>) è un <em>fattore</em> qualitativo studiato a 4 livelli: Nessuna, A.R., A5s, A10s.</p>
+<p>Possiamo modellizzare le 8 misure per ogni tipo di <em>Preparazione</em> come
+<span class="math display">\[
+y_{i1}=\mu+\alpha_1+\epsilon_{i1} \qquad y_{i2}=\mu+\alpha_2+\epsilon_{i2} \qquad y_{i3}=\mu+\alpha_3+\epsilon_{i3} \qquad y_{i4}=\mu+\alpha_4+\epsilon_{i4}
+\]</span>
+dove <span class="math inline">\(\mu+\alpha_i\)</span> è la media “vera” della <em>Pesata</em> con <span class="math inline">\(\mu\)</span> parametro comune a tutti gli effetti, detta media complessiva, e <span class="math inline">\(\alpha_1, \alpha_2, \alpha_3\)</span> e <span class="math inline">\(\alpha_4\)</span> sono i contributi nella media “vera” dovuti all’effetto della <em>Preparazione</em>: Nessuna, A.R., A5s, A10s. Inoltre gli errori casuali
+<span class="math display">\[
+\epsilon_{i1}\sim N(0,\sigma^2) \qquad \epsilon_{i2}\sim N(0,\sigma^2) \qquad \epsilon_{i3}\sim N(0,\sigma^2) \qquad \epsilon_{i4}\sim N(0,\sigma^2)
+\]</span>
+sono a due a due non correlati tra loro. Si noti che è richiesto che abbiano tutti la stessa varianza <span class="math inline">\(\sigma^2\)</span> (ipotesi di omoschedasticità).</p>
+<p>Cominciamo con l’importare in Dati/Esempi Master il dataset <em>Collirio</em>. In “Variabili” nella pagina “Variabili qualitative” bisogna selezionare la variabile <em>Preparazione</em> (fattore qualitativo a 4 livelli)</p>
+<p><img src="Immagini/Anova/01_var_quali.png" width="50%" style="display: block; margin: auto;" /></p>
+<p>Esaminiamo l’effetto del fattore <em>Preparazione</em> sulla <em>Pesata</em>. Per avere una prima idea grafica possiamo, in “Statistica descrittiva/Box plot”, ottenere i box plot delle quattro colonne di dati.</p>
+<p><img src="Immagini/Anova/02_bp.png" width="50%" style="display: block; margin: auto;" /></p>
+<p>Vogliamo testare se
+<span class="math display">\[
+\alpha_1=\alpha_2=\alpha_3=\alpha_4=0
+\]</span>
+i.e. se la <em>Preparazione</em> è ininfluente sulla <em>Pesata</em> oppure se per almeno un <span class="math inline">\(i\)</span>
+<span class="math display">\[
+\alpha_i \neq \ 0
+\]</span>
+Vogliamo verificare se esiste un effetto statisticamente significativo del fattore <em>Preparazione</em> sui dati di <em>Pesata</em> oppure se le variazioni numeriche che si osservano sono dovute al caso.</p>
+<p>Introduciamo la <em>media della variazione tra gruppi</em>,calcolata come somma degli scarti di ogni media di gruppo dalla media generale, moltiplicati per il numero di dati di ciascun gruppo, e divisa per i gradi di libertà:
+<span class="math display">\[
+MS_{tra}=\frac{\sum_{j=1}^nm_j(\bar{y_j}-\bar{y})^2}{n-1}
+\]</span>
+Nel nostro esempio numerico <span class="math inline">\(n=4\)</span> (numero di livelli del fattore <em>Preparazione</em>), <span class="math inline">\(m_j=8\)</span> (numerosità di ogni gruppo) per ogni <span class="math inline">\(j= 1, 2, 3, 4\)</span> e <span class="math inline">\(\bar{y_j}\)</span> media campionaria di ogni gruppo. Nel menù “Statistica descrittiva/ Summary” si ottengono gli indicatori di posizione, di dispersione e la numerosità campionaria per ogni singolo gruppo</p>
+<p><img src="Immagini/Anova/03_summary.png" width="50%" style="display: block; margin: auto;" /></p>
+<p>Si può provare che:</p>
+<ul>
+<li>in assenza di vero effetto gruppo (i.e. della <em>Preparazione</em>) <span class="math inline">\(MS_{tra}\)</span> è uno stimatore della varianza comune <span class="math inline">\(\sigma^2\)</span></li>
+<li>in presenza di vero effetto gruppo (i.e. l’effetto della <em>Preparazione</em> è significativo) <span class="math inline">\(MS_{tra}\)</span> tende ad essere maggiore di <span class="math inline">\(\sigma^2\)</span></li>
+</ul>
+<p>Confrontiamo <span class="math inline">\(MS_{tra}\)</span> con la <em>varianza combinata</em>
+<span class="math display">\[
+MS_{in}=s_c^2=\frac{(m_1-1)s_1^2+\cdots+(m_n-1)s_n^2}{m-n}
+\]</span>
+dove <span class="math inline">\(m\)</span> indica la numerosità del campione (nel nostro esempio <span class="math inline">\(m=32\)</span>) e <span class="math inline">\(s_j^2\)</span> la deviazione standard campionaria del gruppo <span class="math inline">\(j\)</span>.
+Si noti che non è altro che la generalizzazione al caso di <span class="math inline">\(n\)</span> gruppi della <em>varianza combinata</em> già definita nel caso <span class="math inline">\(n=2\)</span> nel capitolo della Statistica inferenziale. <span class="math inline">\(MS_{in}\)</span> è uno stimatore della varianza comune <span class="math inline">\(\sigma^2\)</span>.</p>
+<p>Sotto l’ipotesi nulla
+<span class="math display">\[
+\alpha_1=\alpha_2=\alpha_3=\alpha_4=0
+\]</span>
+si può dimostrare che</p>
+<p><span class="math display">\[
+\frac{MS_{tra}}{MS_{in}} \sim F(n-1,m-n)
+\]</span>
+dove <span class="math inline">\(F\)</span> è la distribuzione di Fisher già introdotta nel capitolo della Statistica inferenziale (<em>F-test</em>).</p>
+<p>E’ possibile quindi eseguire il test d’ipotesi (ad una coda, poichè, come abbiamo detto, il rapporto considerato tende ad essere maggiore o uguale a 1)
+<span class="math display">\[
+\rm{H_0:\ } \alpha_1=\alpha_2=\alpha_3=\alpha_4=0 \qquad \rm{vs} \qquad \rm{H_1:\ } \alpha_i\neq0 \quad \rm{per \ almeno\  un\ } i
+\]</span>
+Rigettiamo l’ipotesi nulla se il risultato <span class="math inline">\(\frac{MS_{tra}}{MS_{in}}\)</span> ottenuto dal nostro campione è maggiore del <span class="math inline">\((1-\alpha)\)</span>-esimo quantile (<span class="math inline">\(\alpha\)</span> livello di significatività, in generale <span class="math inline">\(\alpha=0.05\)</span>) della distribuzione <span class="math inline">\(F(n-1,m-n)\)</span> (zona blu a destra, che essendo il test ad una coda rapprenta il 5% delle possibilità esistenti).
+Per eseguire il test ANOVA del nostro esempio, una volta caricati i dati, in Statistica Inferenziale /Anova si ottiene
+<img src="Immagini/Anova/04_anova1.png" width="50%" style="display: block; margin: auto;" /></p>
+<p>in cui viene fornito il valore della statistica <span class="math inline">\(\frac{MS_{tra}}{MS_{in}}\)</span> e il <em>p-value</em>. Il ragionamento è il consueto: rifiutiamo l’ipotesi nulla e quindi il fattore <em>Preparazione</em> è significativo se il <em>p-value</em> è minore di 0.05 o equivalentemente se nel grafico la linea verde (che rapprenta il valore della statistica) è nella zona blu.</p>
+<p>Viene fornito anche il seguente output</p>
+<p><img src="Immagini/Anova/05_anova2.png" width="50%" style="display: block; margin: auto;" />
+in cui sono indicate le somme quadratiche e le relative medie <em>tra</em> e <em>nei</em> gruppi, il rapporto delle medie (ossia la statistica <span class="math inline">\(\frac{MS_{tra}}{MS_{in}}\)</span>) e il <span class="math inline">\(p-value\)</span>.</p>
+<p>Per poter considerare vere le conclusioni fin qui raggiunte bisogna verificare le ipotesi da cui siamo partiti:</p>
+<ul>
+<li><strong>Normalità</strong><br />
+Per quanto riguarda la normalità dei residui viene fornito il test di <em>Shapiro-Wilk</em> e il <em>qq-plot</em>, già discussi nei capitoli precedenti</li>
+</ul>
+<p><img src="Immagini/Anova/06_normalita.png" width="60%" style="display: block; margin: auto;" /></p>
+<ul>
+<li><p><strong>Omoschedasticità</strong><br />
+Per quanto riguarda l’omoschedasticità vengono forniti i seguenti test:</p>
+<ul>
+<li><p><em>test di Bartlett</em> - poco robusto (sensibile alla violazione della ipotesi di normalità)
+<img src="Immagini/Anova/07_omo1.png" width="50%" style="display: block; margin: auto;" /></p></li>
+<li><p><em>test di Fligner-Killeen</em> - più robusto del test di Bartlett</p></li>
+</ul>
+<p><img src="Immagini/Anova/08_omo2.png" width="50%" style="display: block; margin: auto;" /></p>
+<ul>
+<li><em>test di Levene</em> - da usare se si hanno numerosità campionarie diverse</li>
+</ul>
+<p><img src="Immagini/Anova/09_omo3.png" width="50%" style="display: block; margin: auto;" /></p>
+<ul>
+<li><em>test di Breusch-Pagan</em> - adatto a campioni con numerosità grande
+<img src="Immagini/Anova/10_omo4.png" width="50%" style="display: block; margin: auto;" /></li>
+<li><em>test di Cochran</em> - test della varianza massima (minima)</li>
+</ul>
+<p><img src="Immagini/Anova/11_omo5.png" width="50%" style="display: block; margin: auto;" /></p></li>
+</ul>
+<p>Si osservi che nel nostro esempio tutti i test (vedi figure sopra) evidenziano che non è verificata l’ipotesi di omoschedasticità (<em>p-value</em>&lt;&lt;0.05).
+Il test Anova non è quindi applicabile.
+In casi come questo diventa necessario rivedere e verificare che non siano presenti valori anomali nei dati (si veda dataset <em>Collirio_1waov</em>) oppure, se tutti i dati sono “buoni” e si dimostra che la distribuzione degli stessi non è normale (oppure non si può raggiungere alcuna conclusione al riguardo perché ad esempio si hanno pochi dati) si impiega un test non parametrico quale ad es. il test di Kruskal-Wallis che è appunto l’equivalente non parametrico della ANOVA.</p>
+</div>
+<div id="analisi-della-varianza-a-due-fattori" class="section level2" number="4.2">
+<h2><span class="header-section-number">4.2</span> Analisi della varianza a due fattori</h2>
+<p>Consideriamo il dataset di 32 misure sperimentali della <em>Pesata</em> di un collirio (sono le stesse misure del dataset <em>Collirio_1waov</em>) in cui distinguiamo due fattori qualitativi <em>Preparazione</em> [del campione] e <em>Lotto</em>, numero di lotto di produzione del collirio.<br />
+Il primo fattore ha 4 livelli (Nessuna, A.R, A5s e A10s), il secondo 2 (2150, 2151).</p>
+<p>Oltre alla modalità di <em>Preparazione</em> si vuole verificare ora se la pesata di ogni goccia di collirio dipende anche
+dal fattore <em>Lotto</em> di produzione</p>
+<p>Possiamo rappresentare i dati in 4 colonne (una per ogni livello del fattore <em>Preparazione</em>) e
+2 gruppi di righe (una per ogni livello del fattore <em>Lotto</em>). Ci sono 4 ripetizioni in ognuna delle 8 celle
+<em>Preparazione x Lotto</em></p>
+<pre><code>##      Nessuna    A.R    A5s   A10s
+## 2150  0.0185 0.0377 0.0677 0.0920
+##       0.0304 0.0346 0.0604 0.0934
+##       0.0295 0.0369 0.0673 0.0948
+##       0.0318 0.0439 0.0674 0.1011
+## 2151  0.0303 0.0485 0.0773 0.0833
+##       0.0315 0.0488 0.0738 0.0909
+##       0.0322 0.0448 0.0821 0.0987
+##       0.0315 0.0543 0.0830 0.1080</code></pre>
+<p>Possiamo modellizzare le 4 misure per ognuna delle 8 combinazioni <em>Preparazione x Lotto</em></p>
+<p><span class="math display">\[
+y_{ijk}=\mu+\alpha_{i}+\beta_{j}+(\alpha \beta)_{ij}+\epsilon_{ijk}
+\]</span>
+dove <span class="math inline">\(\mu+\alpha_{i}+\beta_{j}+(\alpha \beta)_{ij}\)</span> sono le medie “vere” della <em>Pesata</em>, <span class="math inline">\(\alpha_i\)</span> e <span class="math inline">\(\beta_j\)</span> sono gli effetti sulla <em>Pesata</em> media dovuti rispettivamente dai fattori <em>Preparazione</em> e <em>Lotto</em>, e <span class="math inline">\((\alpha \beta)_{ij}\)</span> gli effetti sulla <em>Pesata</em> media non attribuibili all’effetto lineare di <span class="math inline">\(\alpha_i\)</span> e <span class="math inline">\(\beta_j\)</span> presi da soli; questo effetto combinato di <span class="math inline">\(\alpha_i\)</span> e <span class="math inline">\(\beta_j\)</span> è un effetto cosiddetto di <em>interazione</em> dei due fattori.
+Come nei casi precedenti formuliamo l’ipotesi che gli errori siano
+<span class="math display">\[
+\epsilon_{ijk} \sim N(0,1)
+\]</span>
+e indipendenti tra loro.</p>
+<p>Vogliamo testare la significatività statistica dell’effetto <em>Preparazione</em>
+<span class="math display">\[
+\rm{H_{0,1}:\ } \alpha_{1}=\alpha_{2}=\alpha_{3}=\alpha_{4}=0 \qquad \rm{vs} \qquad \rm{H_{1,1}:\ } \alpha_{i}\neq 0 \quad \rm{per \ almeno \ un} \ i
+\]</span>
+dell’effetto <em>Lotto</em>
+<span class="math display">\[
+\rm{H_{0,2}:\ } \beta_{1}=\beta_{2}=0 \qquad \rm{vs} \qquad \rm{H_{1,2}:\ } \beta_{j}\neq 0 \quad \rm{per \ almeno \ un} \ j
+\]</span></p>
+<p>e dell’effetto interazione <em>Preparazione x Lotto</em>
+<span class="math display">\[
+\rm{H_{0,12}:\ } (\alpha \beta)_{ij}=0 \qquad \rm{vs} \qquad \rm{H_{1,2}:\ } (\alpha \beta)_{ij}\neq 0 \quad \rm{per \ almeno \ un} \ ij
+\]</span></p>
+<p>Consideriamo:</p>
+<p>la <em>media della variazione del 1° fattore (Preparazione)</em>
+<span class="math display">\[
+MS_{F_1}=\frac{bm\sum_{i=1}^a(\bar{y}_{*i} -\bar{y})^2}{a-1}
+\]</span>
+dove <span class="math inline">\(\bar{y}_{*i}\)</span> è la media campionaria per ognuno degli <span class="math inline">\(a\)</span> livelli del fattore <em>Preparazione</em> (nel nostro esempio <span class="math inline">\(a=4\)</span>, quindi si calcola la media di ciascuna delle 4 colonne del dataset), mentre <span class="math inline">\(\bar{y}\)</span> è la media campionaria di tutte le <span class="math inline">\(abm\)</span> misure (dove <span class="math inline">\(b=2\)</span> sono i livelli del fattore <em>Lotto</em>, <span class="math inline">\(m=4\)</span> è la numerosità campionaria delle 8 combinazioni <em>Preparazione x Lotto</em>, e <span class="math inline">\(abm= 4·2·4=32\)</span> è il numero complessivo delle misure).</p>
+<p>La <em>media della variazione del 2° fattore (Lotto)</em> si calcola come segue:
+<span class="math display">\[
+MS_{F_2}=\frac{am\sum_{j=1}^b(\bar{y}_{j*} -\bar{y})^2}{b-1}
+\]</span>
+dove <span class="math inline">\(\bar{y}_{j*}\)</span> è la media campionaria per ognuno dei <span class="math inline">\(b=2\)</span> livelli del fattore <em>Lotto</em>.</p>
+<p>La <em>media della variazione dell’interazione</em> è data da
+<span class="math display">\[
+MS_{{int}}=\frac{m\sum_{i=1}^a\sum_{j=1}^b(\bar{y}_{ij}-\bar{y}_{i*}-\bar{y}_{*j} -\bar{y})^2}{(a-1)(b-1)}
+\]</span></p>
+<p>e la <em>media dei residui</em>
+<span class="math display">\[
+MS_{{res}}=\frac{\sum_{i=1}^a\sum_{j=1}^b\sum_{k=1}^m(y_{ijk}-\bar{y}_{ij})^2}{ab(m-1)}
+\]</span></p>
+<p>Si può dimostrare che sotto l’ipotesi nulla <span class="math inline">\(\rm{H_{0,1}}\)</span>, <span class="math inline">\(\rm{H_{0,2}}\)</span> e <span class="math inline">\(\rm{H_{0,2}}\)</span> dei 3 test precedentemente descritti che</p>
+<p><span class="math display">\[\begin{eqnarray*}
+\frac{MS_{F_1}}{MS_{{res}}}&amp;\sim&amp;F(a-1,ab(m-1))\\
+\frac{MS_{F_2}}{MS_{{res}}}&amp;\sim&amp;F(b-1,ab(m-1))\\
+\frac{MS_{{int}}}{MS_{{res}}}&amp;\sim&amp;F((a-1)(b-1),ab(m-1))
+\end{eqnarray*}\]</span></p>
+<p>Per ogni test si può procedere come abbiamo visto nel paragrafo precedente.<br />
+Si ricorda che è importante verificare la sussistenza delle ipotesi di costruzione della ANOVA (errori distribuiti come la normale, omoschedastici e indipendenti tra loro) per potere sostenere la validità del risulato dei test.</p>
+<p>Vediamo come eseguire l’analisi della varianza per il dataset <em>Collirio_2waov</em>. Una volta caricato il dataset isogna indicare al software in “Dati/Variabili” quali sono i fattori qualitativi. Nel nostro caso <em>Preparazione</em> e <em>Lotto</em></p>
+<p><img src="Immagini/Anova/12_variab_quali.png" width="50%" style="display: block; margin: auto;" />
+Quindi in “Statistica inferenziale/Anova” nella pagina “Anova:due fattori” sono forniti i 3 test e il consueto output</p>
+<p><img src="Immagini/Anova/13_anova2.png" width="50%" /><img src="Immagini/Anova/14_anova2.png" width="50%" />
+<img src="Immagini/Anova/15_anova2.png" width="50%" /><img src="Immagini/Anova/16_Rout_anova2.png" width="50%" />
+in cui sono indicate le <em>medie</em> <span class="math inline">\(MS_{F_1}, MS_{F_2}, MS_{F_{int}}\)</span> e <span class="math inline">\(MS_{F_{res}}\)</span> sopra definite, le relative statistiche e il valore del <em>p-value</em>.</p>
+<p>Vengono forniti anche i grafici di interazione. Quando le linee dei grafici di interazione non sono parallele si può sospettare l’esistenza di una interazione tra i fattori interessati.</p>
+<p><img src="Immagini/Anova/17_graf_interaz__anova2.png" width="50%" style="display: block; margin: auto;" />
+Per quanto riguarda la verifica delle ipotesi si prosegue con la stessa logica della Anova a un fattore nella pagina “Verifica ipotesi: 2-waov”.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="regressione-lineare-semplice.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="bibliografia.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": null,
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": null,
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["dispense_modunivar.pdf"],
+"toc": {
+"collapse": "section"
+},
+"info": false,
+"search": true
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capitolo 2 Statistica inferenziale | Dispense modulo univariata</title>
+  <meta name="description" content="Capitolo 2 Statistica inferenziale | Dispense modulo univariata" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capitolo 2 Statistica inferenziale | Dispense modulo univariata" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="Immagini/Modunivar.jpg" />
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capitolo 2 Statistica inferenziale | Dispense modulo univariata" />
+  
+  
+  <meta name="twitter:image" content="Immagini/Modunivar.jpg" />
+
+<meta name="author" content="Giorgio Marrubini e Camillo Melzi" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="Immagini/modunivar.ico" type="image/x-icon" />
+<link rel="prev" href="statistica-descrittiva.html"/>
+<link rel="next" href="regressione-lineare-semplice.html"/>
+<script src="libs/header-attrs-2.5/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">MODUNIVAR</a></li>
+
+<li class="divider"></li>
+<li><a href="index.html#section"></a></li>
+<li class="chapter" data-level="" data-path="glossario.html"><a href="glossario.html"><i class="fa fa-check"></i>Glossario minimo</a></li>
+<li class="chapter" data-level="1" data-path="statistica-descrittiva.html"><a href="statistica-descrittiva.html"><i class="fa fa-check"></i><b>1</b> Statistica descrittiva</a></li>
+<li class="chapter" data-level="2" data-path="statistica-inferenziale.html"><a href="statistica-inferenziale.html"><i class="fa fa-check"></i><b>2</b> Statistica inferenziale</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="statistica-inferenziale.html"><a href="statistica-inferenziale.html#stime-della-media"><i class="fa fa-check"></i><b>2.1</b> Stime della media</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="statistica-inferenziale.html"><a href="statistica-inferenziale.html#una-popolazione-gaussiana"><i class="fa fa-check"></i><b>2.1.1</b> Una popolazione gaussiana</a></li>
+<li class="chapter" data-level="2.1.2" data-path="statistica-inferenziale.html"><a href="statistica-inferenziale.html#due-popolazioni-gaussiane-campioni-accoppiati"><i class="fa fa-check"></i><b>2.1.2</b> Due popolazioni gaussiane: campioni accoppiati</a></li>
+<li class="chapter" data-level="2.1.3" data-path="statistica-inferenziale.html"><a href="statistica-inferenziale.html#due-popolazioni-gaussiane-campioni-indipendenti"><i class="fa fa-check"></i><b>2.1.3</b> Due popolazioni gaussiane: campioni indipendenti</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="regressione-lineare-semplice.html"><a href="regressione-lineare-semplice.html"><i class="fa fa-check"></i><b>3</b> Regressione lineare semplice</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="regressione-lineare-semplice.html"><a href="regressione-lineare-semplice.html#stima-dei-parametri-beta_0-e-beta_1"><i class="fa fa-check"></i><b>3.1</b> Stima dei parametri <span class="math inline">\(\beta_0\)</span> e <span class="math inline">\(\beta_1\)</span></a></li>
+<li class="chapter" data-level="3.2" data-path="regressione-lineare-semplice.html"><a href="regressione-lineare-semplice.html#significatività-dei-coefficienti"><i class="fa fa-check"></i><b>3.2</b> Significatività dei coefficienti</a></li>
+<li class="chapter" data-level="3.3" data-path="regressione-lineare-semplice.html"><a href="regressione-lineare-semplice.html#previsione-del-modello"><i class="fa fa-check"></i><b>3.3</b> Previsione del modello</a></li>
+<li class="chapter" data-level="3.4" data-path="regressione-lineare-semplice.html"><a href="regressione-lineare-semplice.html#verifica-delle-ipotesi-1"><i class="fa fa-check"></i><b>3.4</b> Verifica delle ipotesi</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="analisi-della-varianza.html"><a href="analisi-della-varianza.html"><i class="fa fa-check"></i><b>4</b> Analisi della Varianza</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="analisi-della-varianza.html"><a href="analisi-della-varianza.html#analisi-della-varianza-a-un-fattore"><i class="fa fa-check"></i><b>4.1</b> Analisi della varianza a un fattore</a></li>
+<li class="chapter" data-level="4.2" data-path="analisi-della-varianza.html"><a href="analisi-della-varianza.html#analisi-della-varianza-a-due-fattori"><i class="fa fa-check"></i><b>4.2</b> Analisi della varianza a due fattori</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="bibliografia.html"><a href="bibliografia.html"><i class="fa fa-check"></i>Bibliografia</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Dispense modulo univariata</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="statistica-inferenziale" class="section level1" number="2">
+<h1><span class="header-section-number">Capitolo 2</span> Statistica inferenziale</h1>
+<div id="stime-della-media" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> Stime della media</h2>
+<div id="una-popolazione-gaussiana" class="section level3" number="2.1.1">
+<h3><span class="header-section-number">2.1.1</span> Una popolazione gaussiana</h3>
+<p>Riconsideriamo il dataset <em>Resa estrattiva</em> già visto nella parte di Statistica descrittiva:</p>
+<pre><code>##     Resa
+## 1  13.84
+## 2  18.77
+## 3  17.85
+## 4  23.05
+## 5  19.27
+## 6  20.87
+## 7  17.35
+## 8  22.37
+## 9  21.45
+## 10 19.40</code></pre>
+<p>A differenza del caso precedente, in cui le 10 misure formavano l’intera popolazione in esame, il dataset rappresenta un campione (aleatorio) della popolazione di tutte le misure teoricamente possibili.</p>
+<p>Siamo interessati ad ottenere informazioni su tutta la popolazione partendo dal campione (aleatorio) del risultato di
+10 misure sperimentali. Ad esempio possiamo chiederci qual’ è la media “vera” della nostra resa estrattiva o meglio come possiamo stimare tale valore a partire dai 10 risultati sperimentali.</p>
+<p>Per fare ciò abbiamo bisogno di conoscere a priori la probabilità di distribuzione di ogni misura.<br />
+Possiamo supporre che ogni misura sia data dalla media “vera” <span class="math inline">\(\mu\)</span> della nostra resa estrattiva più un errore sperimentale <span class="math inline">\(\epsilon\)</span> puramente casuale:
+<span class="math display">\[
+y=\mu+\epsilon
+\]</span>
+L’errore sperimentale <span class="math inline">\(\epsilon\)</span> può essere supposto distribuito come una normale di media <span class="math inline">\(0\)</span> e varianza <span class="math inline">\(\sigma^2\)</span>
+<span class="math display">\[
+\epsilon \sim N(0,\sigma^2)
+\]</span>
+grazie ad un teorema fondamentale di calcolo delle probabilità (il <em>teorema centrale del limite</em>) che dimostra la verità di questa affermazione. Questo teorema afferma che la somma di variabili casuali aventi la stessa distribuzione di probabilità tende ad essere distribuita come una normale indipendentemente dalla loro distribuzione.</p>
+<p>Ciò significa che il risultato di una singola misura (che è un valore casuale, dipendente dal campione) può assumere ad esempio i valori come nelle seguenti figure</p>
+<p><img src="Immagini/Inferenziale/misura1.png" width="35%" /><img src="Immagini/Inferenziale/misura2.png" width="35%" /><img src="Immagini/Inferenziale/misura3.png" width="35%" /></p>
+<p>ma certamente sappiamo (sapendo che la sua distribuzione è una normale), ad esempio, che il risultato della misura sarà nella zona bianca della figura seguente con una probabilità pari al 95%</p>
+<p><img src="Immagini/Inferenziale/probamis.png" width="50%" style="display: block; margin: auto;" /></p>
+<p>Altra importante ipotesi è che le misure siano indipendenti le une dalle altre, ossia che il risultato di ogni misura non sia influenzato in alcun modo da una misura precedente.</p>
+<p>Osservazione: alla luce di quanto sopra, come devono essere eseguiti gli esperimenti, ad esempio nella costruzione di una curva di taratura?
+E’ corretta la prassi di predisporre i calibratori in ordine crescente di concentrazione?</p>
+<p>Riassumendo: a partire dal risultato di <span class="math inline">\(10\)</span> misure distribuite come una normale di media <span class="math inline">\(\mu\)</span> e varianza <span class="math inline">\(\sigma^2\)</span>
+<span class="math display">\[
+y_i=\mu+\epsilon_i, \qquad \epsilon_i \sim N(0,\sigma^2)
+\]</span>
+supponiamo che le misure siano tutte indipendenti tra loro e quindi ci poniamo il problema della stima della media “vera” della nostra resa estrattiva, ossia del parametro <span class="math inline">\(\mu\)</span>.</p>
+<p>Si noti che grazie al <em>teorema centrale del limite</em> è possibile alleggerire le ipotesi nel caso in cui il numero <span class="math inline">\(m\)</span> di osservazioni (la numerosità del campione) è grande, ad esempio <span class="math inline">\(m&gt;30\)</span>. In tal caso è sufficiente supporre che le misure siano identicamente distribuite (cioè che abbiano la stessa distribuzione di probabilità, non importa quale) e indipendenti tra loro.</p>
+<div id="varianza-sigma2-nota" class="section level4" number="2.1.1.1">
+<h4><span class="header-section-number">2.1.1.1</span> Varianza <span class="math inline">\(\sigma^2\)</span> nota</h4>
+<p>In questo paragrafo supponiamo che la varianza <span class="math inline">\(\sigma^2\)</span> della popolazione sia nota a priori; nel paragrafo successivo ci occuperemo del caso (più frquente) in cui <span class="math inline">\(\sigma^2\)</span> non sia nota e dunque debba essere stimata.</p>
+<p>A partire dal risultato delle <span class="math inline">\(10\)</span> misure sperimentali del nostro campione possiamo considerare la variabile <span class="math inline">\(\bar{y}\)</span>, definita come la “media” delle <span class="math inline">\(10\)</span> misure
+<span class="math display">\[
+\bar{y}=\frac{\sum_{i=1}^{10}y_i}{10}
+\]</span>
+La variabile <span class="math inline">\(\bar{y}\)</span> è una variabile casuale (dipende dal campione di <span class="math inline">\(10\)</span> misure che è estratto in modo casuale dalla popolazione) ma, grazie alle proprietà della distribuzione normale delle <span class="math inline">\(y_i\)</span> e all’ipotesi di indipendenza delle misure, è facile dimostare che essa - la media delle misure- è distribuita come una normale di media <span class="math inline">\(\mu\)</span> e varianza <span class="math inline">\(\sigma^2/10\)</span>
+<span class="math display">\[
+\bar{y}\sim N(\mu,\sigma^2/10)
+\]</span>
+La quantità <span class="math inline">\(\sigma/\sqrt{10}\)</span> è chiamata <em>errore standard della media</em>
+(Attenzione! da non confondere con la deviazione standard dalla media)</p>
+<p><img src="Immagini/Inferenziale/varianza_media.png" width="50%" style="display: block; margin: auto;" /></p>
+<p>ed è un indicatore della variazione della stima puntuale <span class="math inline">\(\bar{y}\)</span> della media <span class="math inline">\(\mu\)</span> (proprietà che chiamiamo “precisione” della stima e che coincide con la qualità della stima stessa; una stima di “buona” qualità è un dato che ha piccolo errore standard ossia alta precisione).
+L’<em>errore standard della media</em> <span class="math inline">\(\sigma/\sqrt{m}\)</span> diminuisce all’aumentare della numerosità <span class="math inline">\(m\)</span> del campione. Per aumentare la precisione occorre quindi aumentare il numero di campioni (nel nostro esempio la precisione della stima con <span class="math inline">\(m=10\)</span> può essere migliorata se aumentiamo m, il numero dei campioni, per fissare le idee poniamo <span class="math inline">\(m=20\)</span>).</p>
+<div id="intervallo-di-confidenza" class="section level5" number="2.1.1.1.1">
+<h5><span class="header-section-number">2.1.1.1.1</span> Intervallo di confidenza</h5>
+<p>La stima puntuale <span class="math inline">\(\bar{y}\)</span> del parametro <span class="math inline">\(\mu\)</span> è una risposta piuttosto grossolana al problema di determinare una buona approssimazione del valore vero incognito.
+In particolare ricordiamo che il valore stimato sperimentalmente non sarà mai uguale al valore vero (per di più, per definizione, il valore vero non è nemmeno noto…).</p>
+<p>Vediamo quindi come possiamo determinare una stima per intervalli del parametro <span class="math inline">\(\mu\)</span>: cerchiamo di definire il cosiddetto “intervallo di confidenza”.</p>
+<p>Grazie alle note proprietà della normale si può dimostrare che:</p>
+<p><span class="math display">\[
+\bar{y}-\mu \sim N(0,\sigma^2/10)
+\]</span>
+e che</p>
+<p><span class="math display">\[
+\frac{\bar{y}-\mu}{\sigma\sqrt{1/10}} \sim N(0,1)
+\]</span></p>
+<p>Riassumendo: a partire dal risultato delle <span class="math inline">\(10\)</span> misure abbiamo calcolato la variabile <span class="math inline">\(\frac{\bar{y}-\mu}{\sigma\sqrt{1/10}}\)</span>. Essa è una variabile casuale (dipende dal campione di <span class="math inline">\(10\)</span> misure che è stato estratto in modo casuale dalla popolazione) di cui conosciamo la distribuzione di probabilità.</p>
+<p>Nel menù Simulazione /Stima della media del programma è possibile simulare quanto detto. Supponiamo che la media della popolazione
+(che a priori non conosciamo) sia <span class="math inline">\(\mu=19\)</span>, che la deviazione standard sia <span class="math inline">\(\sigma=2.7\)</span> e che la numerosità del campione sia <span class="math inline">\(m=10\)</span></p>
+<p><img src="Immagini/Inferenziale/simulazione_media.png" width="50%" style="display: block; margin: auto;" /></p>
+<p>cliccando sul bottone <em>Ricampiona</em> si simula il risultato <span class="math inline">\(\frac{\bar{y}-\mu}{\sigma\sqrt{1/10}}\)</span> ottenuto da <span class="math inline">\(10\)</span> nuove misure sperimentali (cioè da un nuovo campione casuale di numerosità <span class="math inline">\(10\)</span> della popolazione in esame)</p>
+<p><img src="Immagini/Inferenziale/simulazione_media1.png" width="35%" /><img src="Immagini/Inferenziale/simulazione_media2.png" width="35%" /><img src="Immagini/Inferenziale/simulazione_media3.png" width="35%" /></p>
+<p>Fissando la significatività ad esempio a <span class="math inline">\(0.05\)</span> si ha che <span class="math inline">\(\frac{\bar{y}-\mu}{\sigma\sqrt{1/10}}\)</span> ha il <span class="math inline">\(95\)</span>% di probabilità di assumere valori (la linea verde) nella regione bianca, come ad esempio in figura</p>
+<p><img src="Immagini/Inferenziale/simulazione_media4.png" width="50%" style="display: block; margin: auto;" /></p>
+<p>Riprendiamo la costruzione dell’intervallo di confidenza. Fissiamo un valore <span class="math inline">\(\alpha\)</span> compreso tra <span class="math inline">\(0\)</span> e <span class="math inline">\(1\)</span> (in generale si fissa <span class="math inline">\(\alpha=0.05\)</span>). Indichiamo con <span class="math inline">\(z_{\alpha/2}\)</span> il quantile di ordine <span class="math inline">\(1-\alpha/2\)</span> della distribuzione normale <span class="math inline">\(N(0,1)\)</span>, ossia quel numero reale per cui una variabile <span class="math inline">\(z\)</span> casuale distribuita come <span class="math inline">\(N(0,1)\)</span> abbia probablità <span class="math inline">\(1-\alpha/2\)</span> di assumere valore minore di <span class="math inline">\(z_{\alpha/2}\)</span>
+<span class="math display">\[
+\mathbb{P}[z &lt; z_{\alpha/2}] = 1-\alpha/2
+\]</span></p>
+<p>In particolare, essendo <span class="math inline">\(\frac{\bar{y}-\mu}{\sigma\sqrt{1/10}} \sim N(0,1)\)</span>, avremmo che</p>
+<p><span class="math display">\[
+\mathbb{P}[\frac{\bar{y}-\mu}{\sigma\sqrt{1/10}} &lt; z_{\alpha/2}] = 1-\alpha/2
+\]</span></p>
+<p>Nell’esempio del simulatore, <span class="math inline">\(z_{\alpha/2}\)</span> indica il valore sulle ascisse di confine destro tra la zona blu e la zona bianca.</p>
+<p>Abbiamo quindi</p>
+<p><span class="math display">\[
+\mathbb{P}[- z_{\alpha/2}&lt;\frac{\bar{y}-\mu}{\sigma\sqrt{1/10}} &lt; z_{\alpha/2}] = 1-\alpha
+\]</span></p>
+<p>che, sempre nell’esempio del simulatore, è la probabilità che la linea verde cada nella zona bianca (vedi figura sopra).</p>
+<p>Possiamo quindi costruire il seguente <em>intervallo di confidenza di livello <span class="math inline">\(\alpha\)</span></em>
+<span class="math display">\[
+\bar{y} \pm z_{\alpha/2} \sigma \sqrt{1/10}
+\]</span>
+Questo un intervallo aleatorio, perché dipende dal campione di <span class="math inline">\(10\)</span> misure (estratto in modo casuale dalla popolazione). Nel simulatore, infatti, se clicchiamo sul bottone <em>Ricampiona</em> otteniamo intervalli diversi.</p>
+<p><img src="Immagini/Inferenziale/intconf1.png" width="35%" /><img src="Immagini/Inferenziale/intconf2.png" width="35%" /><img src="Immagini/Inferenziale/intconf3.png" width="35%" /></p>
+<p>L’<em>intervallo di confidenza di livello <span class="math inline">\(\alpha\)</span></em> ha come caratteristica questa proprietà. Ripetendo un numero elevato di volte la costruzione dell’intervallo a partire da un nuovo campione (<span class="math inline">\(10\)</span> nuove misure sperimentali) circa <span class="math inline">\(1-\alpha\)</span> di questi intervalli contiene il valore <span class="math inline">\(\mu\)</span>.
+Nel simulatore, cliccando un numero elevato di volte il bottone <em>Ricampiona</em>, circa il <span class="math inline">\(95\%\)</span> degli intervalli costruiti conterrà la linea tratteggiata verticale (valore di <span class="math inline">\(\mu\)</span>)</p>
+</div>
+<div id="test-di-ipotesi" class="section level5" number="2.1.1.1.2">
+<h5><span class="header-section-number">2.1.1.1.2</span> Test di ipotesi</h5>
+<p>A partire da quanto detto è possibile anche fare il seguente test di ipotesi sulla media:
+<span class="math display">\[
+ H_0: \mu=\mu_0 \quad \rm{vs} \quad H_1: \mu \neq \mu_0 \quad 
+\]</span>
+cioè supponiamo che la media “vera” <span class="math inline">\(\mu\)</span> sia uguale ad un certo valore <span class="math inline">\(\mu_0\)</span> e vediamo se le informazioni ricavabili dal nostro campione di <span class="math inline">\(10\)</span> misure sono tali da portarci a confutare questa ipotesi.
+La procedura di esecuzione di un test di ipotesi è sempre la stessa ed inizia formulando la affermazione seguente: consideriamo l’ipotesi <span class="math inline">\(\mu=\mu_0\)</span> vera fino “a prova contraria”.</p>
+<p>Fissato un valore <span class="math inline">\(\alpha\)</span> per quanto sopra detto, nell’ipotesi <span class="math inline">\(\mu=\mu_0\)</span>, abbiamo che</p>
+<p><span class="math display">\[
+\mathbb{P}[- z_{\alpha/2}&lt;\frac{\bar{y}-\mu_0}{\sigma\sqrt{1/10}} &lt; z_{\alpha/2}] = 1-\alpha
+\]</span></p>
+<p>Ad esempio nel menù Simulazioni/Test d’ipotesi, ragionando come sopra,</p>
+<p><img src="Immagini/Inferenziale/test_ip.png" width="50%" style="display: block; margin: auto;" /></p>
+<p>supponendo <span class="math inline">\(\mu=18\)</span>, cliccando sul bottone <em>Ricampiona</em> si simula il risultato <span class="math inline">\(\frac{\bar{y}-\mu_0}{\sigma\sqrt{1/10}}\)</span> ottenuto da <span class="math inline">\(10\)</span> nuove misure sperimentali (cioè da un nuovo campione casuale di numerosità <span class="math inline">\(10\)</span> della popolazione in esame)</p>
+<p><img src="Immagini/Inferenziale/test_ip1.png" width="35%" /><img src="Immagini/Inferenziale/test_ip2.png" width="35%" /><img src="Immagini/Inferenziale/test_ip3.png" width="35%" /></p>
+<p>Siccome noi supponiamo vera l’ipotesi nulla <span class="math inline">\(H_0\)</span>, il <span class="math inline">\(95 \%\)</span> (<span class="math inline">\(\alpha=0.05\)</span>) delle volte il valore <span class="math inline">\(\frac{\bar{y}-\mu_0}{\sigma\sqrt{1/10}}\)</span> deve cadere nella zona bianca mentre il restante <span class="math inline">\(5 \%\)</span> cade nella zona blu <em>Regione Critica</em>.</p>
+<p>Accettiamo l’ipotesi nulla <span class="math inline">\(H_0\)</span> se la stima <span class="math inline">\(\frac{\bar{y}-\mu_0}{\sigma\sqrt{1/10}}\)</span> non cade nella <em>Regione Critica</em> (primo e terzo caso caso nella figura precedente) infatti, in tal caso non abbiamo evidenza statistica per rifiutare l’ipotesi nulla, mentre rifiutiamo l’ipotesi nulla nel caso contrario (secondo caso figura precedente).
+In tal caso diremo che <span class="math inline">\(\mu\)</span> è diversa da <span class="math inline">\(\mu_0\)</span> al livello di significatività <span class="math inline">\(\alpha\)</span> (o che <span class="math inline">\(\mu\)</span> è significativamente diversa da <span class="math inline">\(\mu_0\)</span> al livello <span class="math inline">\(\alpha\)</span>).
+Si osservi che <span class="math inline">\(\alpha\)</span> è la probabilità di rifiutare l’ipotesi nulla <span class="math inline">\(H_0\)</span> quando questa è vera (errore di tipo I) e, ovviamente, si vuole che tale probabilità sia piccola.</p>
+<p>Per eseguire il test nell’esempio <em>Resa estrattiva</em> si procede come segue: si carica il dataset nel menù Statistica inferenziale/Test media. Si sceglie il caso di una popolazione, si indica il valore della deviazione standard nota (N.B. stiamo supponendo che <span class="math inline">\(\sigma\)</span> sia nota a priori), ad esempio <span class="math inline">\(\sigma =2.7\)</span> e si indica infine la media ipotizzata, ad esempio <span class="math inline">\(\mu_0=18\)</span>. Quindi si fissa la significatività <span class="math inline">\(\alpha\)</span>, ad esempio <span class="math inline">\(\alpha=0.05\)</span>. Abbiamo evidenza statistica per rifiutare <span class="math inline">\(H_0\)</span> se la linea verde (che indica il valore <span class="math inline">\(\frac{\bar{y}-\mu_0}{\sigma\sqrt{1/10}}\)</span> calcolato dal nostro campione) è nella <em>Regione Critica</em>, ossia cade nella regione blu. In caso contrario accettiamo <span class="math inline">\(H_0\)</span> non avendo evidenza statistica per rifiutarla.
+Attenzione! Non abbiamo provato che <span class="math inline">\(H_0\)</span> è <em>vera</em> (ipotesi a priori). Il responso del test di ipotesi è che le informazioni contenute nel nostro campione (la media e la deviazione standard) non sono tali da fornire prove sufficienti per rifiutarla e dire quindi che la media del campione è diversa da quella della popolazione al livello di significatività <span class="math inline">\(\alpha=0.05\)</span>.</p>
+<p>Un importante indicatore di un test d’ipotesi è il <em>p-value</em>. E’ la probabilità che una variabile aleatoria distribuita come la <span class="math inline">\(N(0,1)\)</span> assuma valori (in valore assoluto) maggiori di <span class="math inline">\(\frac{\bar{y}-\mu_0}{\sigma\sqrt{1/10}}\)</span></p>
+<p><span class="math display">\[
+\mathbb{P}[|z|&gt;|\frac{\bar{y}-\mu_0}{\sigma\sqrt{1/10}}|], \qquad z \sim N(0,1)
+\]</span></p>
+<p>Il <em>p-value</em> è il più piccolo valore di <span class="math inline">\(\alpha\)</span> per cui abbiamo evidenza statistica per rifiutare <span class="math inline">\(H_0\)</span>. E il “vero” livello di significatività per cui rifiutiamo <span class="math inline">\(H_0\)</span>.</p>
+<p>Accettiamo <span class="math inline">\(H_0\)</span> se il <em>p-value</em> è maggiore di <span class="math inline">\(\alpha\)</span> (immagine a destra nella figura sottostante) e rifiutiamo <span class="math inline">\(H_0\)</span> nel caso contario (immagine a sinistra nella figura sottostante)</p>
+<p><img src="Immagini/Inferenziale/pval.png" width="50%" /><img src="Immagini/Inferenziale/pval1.png" width="50%" /></p>
+<p>Ragionando con l’<em>intervallo di confidenza</em>, accettiamo <span class="math inline">\(H_0\)</span> se <span class="math inline">\(\mu_0\)</span> appartiene all’intervallo, in caso contrario rifiutiamo <span class="math inline">\(H_0\)</span>.</p>
+<p>Il valore del <em>p-value</em> e gli estremi dell’<em>intervallo di confidenza</em>, così come il valore della statistica <span class="math inline">\(\frac{\bar{y}-\mu_0}{\sigma\sqrt{1/10}}\)</span>, si ottengono nel menù Statistica inferenziale/Test media: una popolazione</p>
+<p><img src="Immagini/Inferenziale/test_ip4.png" width="50%" style="display: block; margin: auto;" /></p>
+</div>
+</div>
+<div id="verifica-delle-ipotesi" class="section level4" number="2.1.1.2">
+<h4><span class="header-section-number">2.1.1.2</span> Verifica delle ipotesi</h4>
+<p>Dobbiamo verificare che le <span class="math inline">\(10\)</span> misure sperimentali provengano da una popolazione normale. Questa è l’ipotesi fondamentale da cui siamo partiti affiché tutto ciò detto fin qui sia valido. Ricordiamo che nel caso in cui il campione si sufficientemente grande (ad esempio <span class="math inline">\(m&gt;30\)</span>) questa ipotesi si può attenuare grazie al <em>teorema centrale del limite</em>. In tal caso è sufficiente supporre che le misure siano identicamente distribuite (cioè che abbiano la stessa distribuzione di probabilità, non importa quale).</p>
+<p>L’ipotesi di normalità può essere verificata mediante un grafico che riporta in ascissa i quantili della <span class="math inline">\(N (0 , 1)\)</span> e in ordinate i quantili della distribuzione campionaria dei dati. Tanto più i quantili sono allineati tanto più i dati confermano l’ipotesi di normalità.</p>
+<p>Esiste anche un test d’ipotesi specifico, il <em>test di Shapiro-Wilk</em>, considerato uno dei più potenti per la verifica della normalità, soprattutto per campioni poco numerosi. Il test confronta una varianza ottenuta usando pesi particolari con la
+varianza campionaria. Indicato con <span class="math inline">\(W\)</span> il rapporto tra le due stime della varianza (<span class="math inline">\(0 &lt; W &lt; 1\)</span>), nell’ipotesi di
+normalità (ipotesi nulla <span class="math inline">\(H_0\)</span>) si rifiuta l’ipotesi nulla per valori di W troppo piccoli. Il risultato del test è il parametro <span class="math inline">\(W\)</span> a cui è associato un <em>p-value</em>. Il significato rimane quello detto per cui un <em>p-value</em> sufficientemente piccolo
+(<span class="math inline">\(p &lt; \alpha\)</span>) è un indice della probabilità che la distribuzione non sia normale.</p>
+<p><img src="Immagini/Inferenziale/test_ip_verfipo.png" width="50%" style="display: block; margin: auto;" /></p>
+<p>La figura rappresenta la verifica di ipotesi eseguita per l’esempio considerato (menù Statistica inferenziale/Test media: una popolazione - pagina Verifica ipotesi)</p>
+<p>Quanto illustrato in questo paragrafo in merito ai testi di ipotesi è valido in tutto il capitolo. Per verificare le ipotesi si segue la procedura descritta a partire dalla formulazione della ipotesi nulla, si calcola la statistica del test di interesse (in questo caso, la W di Shapiro-Wilk) e si stabilisce dal valore del parametro stimato se l’ipotesi nulla può essere accettata (<span class="math inline">\(H_0\)</span>: la distribuzione dei dati è normale) o deve essere rifiutata (<span class="math inline">\(H_1\)</span>: la distribuzione non è normale).</p>
+</div>
+<div id="varianza-sigma2-non-nota" class="section level4" number="2.1.1.3">
+<h4><span class="header-section-number">2.1.1.3</span> Varianza <span class="math inline">\(\sigma^2\)</span> non nota</h4>
+<p>In questo caso dobbiamo stimare anche <span class="math inline">\(\sigma^2\)</span>. Una stima puntuale della varianza <span class="math inline">\(\sigma^2\)</span> è data da
+<span class="math display">\[
+s^2 = \frac{1}{m-1}\sum_{j=1}^m (y_j-\bar y)^2.
+\]</span>
+(<span class="math inline">\(m=10\)</span> nel nostro esempio).</p>
+<p>Si può quindi dimostrare che
+<span class="math display">\[
+\frac{\bar y - \mu}{s \sqrt{1/m}} \sim t(m-1),
+\]</span>
+dove <span class="math inline">\(t(m-1)\)</span> è la distribuzione di Student a <span class="math inline">\(m-1\)</span> gradi di libertà.</p>
+<p>Come si vede dalla figura sottostante la forma della <span class="math inline">\(t\)</span> di Student dipende dai gradi di libertà e, al crescere di questi ultimi, si “avvicina” alla normale <span class="math inline">\(N(0,1)\)</span>. Chiaramente il dover stimare anche <span class="math inline">\(\sigma\)</span> fa perdere un po’ di precisione che “migliora” però al crescere della numerosità campionaria.</p>
+<p><img src="Immagini/Inferenziale/student.png" width="50%" style="display: block; margin: auto;" /></p>
+<p>La quantità <span class="math inline">\(s\)</span> nella formula precedente è la deviazione standard del campione,
+è una stima - consistente non distorta - della deviazione standard della popolazione.<br />
+La quantità <span class="math inline">\(s \sqrt{1/m}\)</span> è <em>l’errore standard della media</em>,
+ossia la stima della deviazione standard della media.
+È dunque una stima della variabilità della stima della media, cioè una misura della sua imprecisione.</p>
+<p>Grazie alla conoscenza della distribuzione di probabilità di <span class="math inline">\(\frac{\bar y - \mu}{s \sqrt{1/m}}\)</span> , possiamo ragionare come nel paragrafo precedente, e fare inferenza per <span class="math inline">\(\mu\)</span>.</p>
+<p>Fissiamo un valore <span class="math inline">\(\alpha\)</span> compreso tra <span class="math inline">\(0\)</span> e <span class="math inline">\(1\)</span> (in generale si fissa <span class="math inline">\(\alpha=0.05\)</span>). Indichiamo con <span class="math inline">\(t_{\alpha/2}\)</span> il quantile di ordine <span class="math inline">\(1-\alpha/2\)</span> della distribuzione normale <span class="math inline">\(t(m-1)\)</span>, ossia quel numero reale per cui una variabile <span class="math inline">\(t\)</span> casuale distribuita come <span class="math inline">\(t(m-1)\)</span> abbia probablità <span class="math inline">\(1-\alpha/2\)</span> di assumere valore minore di <span class="math inline">\(t_{\alpha/2}\)</span>
+<span class="math display">\[
+\mathbb{P}[t &lt; t_{\alpha/2}] = 1-\alpha/2
+\]</span></p>
+<ul>
+<li><p><em>intervallo di confidenza</em>
+<span class="math display">\[
+\bar{y} \pm t_{\alpha/2}s\sqrt{1/m}
+\]</span></p></li>
+<li><p><em>test d’ipotesi (t-test)</em>
+<span class="math display">\[
+ H_0: \mu=\mu_0 \quad \rm{vs} \quad H_1: \mu \neq \mu_0 \quad 
+\]</span></p></li>
+</ul>
+<p>Come nel caso della varianza nota vanno verificate le ipotesi. Si procede esattamente come quanto visto nel paragrafo precedente.</p>
+<p>Tornando al nostro esempio: supponiamo che da un altro gruppo di esperimenti sulla stessa pianta si ottiene il
+valore medio di <span class="math inline">\(18.02\)</span>. Vogliamo verificare se possiamo accettare l’ipotesi nulla <span class="math inline">\(\mu_0=18.02\)</span>. Ci chiediamo “<span class="math inline">\(18.02\)</span> e <span class="math inline">\(19.42\)</span> (media campionaria) sono
+statisticamente distinguibili”?
+(N.B. il fatto che due dati siano <em>numericamente diversi</em> non vuole dire che lo siano anche <em>statisticamente</em>. Questo è l’oggetto della verifica in questione).
+Per eseguire il test si procede come nel caso precedente: una volta caricato il dataset, nel menù Statistica inferenziale/Test media si sceglie il caso di una popolazione e si clicca su <em>Varianza non nota</em>, si indica infine la media ipotizzata, ad esempio <span class="math inline">\(\mu_0=18.02\)</span>. Quindi si fissa la significatività <span class="math inline">\(\alpha\)</span>, ad esempio <span class="math inline">\(\alpha = 0.05\)</span>.
+Abbiamo evidenza statistica per rifiutare <span class="math inline">\(H_0\)</span> se la linea verde (che indica il valore <span class="math inline">\(\frac{\bar{y}-\mu_0}{\sigma\sqrt{1/10}}\)</span> calcolato dal nostro campione) è nella <em>Regione Critica</em>, ossia cade nella regione blu. In caso contrario accettiamo <span class="math inline">\(H_0\)</span> non avendo evidenza statistica per rifiutarla.</p>
+<p>Il valore del <em>p-value</em> e gli estremi dell’<em>intervallo di confidenza</em>, così come il valore della statistica <span class="math inline">\(\frac{\bar{y}-\mu_0}{\sigma\sqrt{1/10}}\)</span>, si ottengono nel menù Statistica inferenziale/Test media: una popolazione</p>
+<p><img src="Immagini/Inferenziale/t_test.png" width="50%" style="display: block; margin: auto;" /></p>
+</div>
+</div>
+<div id="due-popolazioni-gaussiane-campioni-accoppiati" class="section level3" number="2.1.2">
+<h3><span class="header-section-number">2.1.2</span> Due popolazioni gaussiane: campioni accoppiati</h3>
+<p>Consideriamo il dataset <em>Diuretico</em></p>
+<pre><code>##    Paziente Diuretico.A Diuretico.B
+## 1         1         3.5         4.0
+## 2         2         4.0         4.2
+## 3         3         4.6         4.9
+## 4         4         7.1         5.6
+## 5         5         3.1         5.1
+## 6         6         5.5         5.0
+## 7         7         6.8         5.7
+## 8         8         5.1         7.1
+## 9         9         5.6         6.2
+## 10       10         3.8         5.2
+## 11       11         4.8         6.3
+## 12       12         6.9         6.4</code></pre>
+<p>Il dataset consiste nell’elenco dei valori di volume di urina escreta da 12 pazienti volontari a cui sono stati somministrati 2 diuretici differenti qui denominati A e B. La prima colonna della tabella (“Paziente”), riporta il codice identificativo di ogni paziente. Quindi, in questo caso i campioni sono accoppiati in quanto in ogni riga le misure si riferiscono ai volumi di urina raccolti in seguito alla somministrazione del <em>Diuretico.A</em> e del <em>Diuretico.B</em> allo stesso paziente.</p>
+<p>Cade perciò l’ipotesi di indipendenza dei campioni perché, in ciascun paziente, il volume di urina escreto per effetto del diuretico A non è indipendente da quello escreto per effetto del diuretico B: il legame tra i due dati sperimentali è rappresentato dal paziente stesso. Ciascuna coppia di volumi di urina è determinata dalla fisiologia del paziente in esame. Quindi non si può applicare quanto detto finora sui test d’ipotesi e bisogna ridefinire la variabile aleatoria.
+Si sceglie quindi di trasformare le <span class="math inline">\(24\)</span> misure non indipendenti tra loro a coppie, in <span class="math inline">\(12\)</span> differenze indipendenti tra loro e su questa «nuova» variabile si applica il test più appropriato (<span class="math inline">\(z\)</span> se sigma nota, <span class="math inline">\(t\)</span> altrimenti).</p>
+<p>Per eseguire il test si procede come segue: una volta caricato il dataset bisogna definire la natura delle variabili (la variabile <em>Paziente</em> è qualitativa mentre le altre <span class="math inline">\(2\)</span> variabili <span class="math inline">\(Diuretico.A\)</span> e <span class="math inline">\(Diuretico.B\)</span> sono quantitative) selezionando in Dati/Variabili/Variabili quantitative <em>Paziente</em> come variabile qualitativa</p>
+<p><img src="Immagini/Inferenziale/variabili.png" width="50%" style="display: block; margin: auto;" /></p>
+<p>Nel menù Statistica inferenziale/Test media si sceglie il caso di due popolazione e si seleziona la pagina Test:dati accoppiati. Non conoscendo a priori la varianza della variabile differenza si clicca su <em>Varianza non nota</em>, si indica infine la media della differenza ipotizzata, ad esempio <span class="math inline">\(\mu_0=0\)</span>. Quindi si fissa la significatività <span class="math inline">\(\alpha\)</span>, ad esempio <span class="math inline">\(\alpha = 0.05\)</span>.
+Abbiamo evidenza statistica per rifiutare <span class="math inline">\(H_0\)</span> se la linea verde (che indica il valore <span class="math inline">\(\frac{\bar{y}-\mu_0}{\sigma\sqrt{1/10}}\)</span> calcolato dal nostro campione) è nella <em>Regione Critica</em>, ossia cade nella regione blu. In caso contrario accettiamo <span class="math inline">\(H_0\)</span> non avendo evidenza statistica per rifiutarla.</p>
+<p>Il valore del <em>p-value</em> e gli estremi dell’<em>intervallo di confidenza</em>, così come il valore della statistica <span class="math inline">\(\frac{\bar{y}-\mu_0}{\sigma\sqrt{1/10}}\)</span>, si ottengono nel menù Statistica inferenziale/Test media: una popolazione</p>
+<p><img src="Immagini/Inferenziale/t_test_accoppiati.png" width="50%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="due-popolazioni-gaussiane-campioni-indipendenti" class="section level3" number="2.1.3">
+<h3><span class="header-section-number">2.1.3</span> Due popolazioni gaussiane: campioni indipendenti</h3>
+<p>Consideriamo il dataset <em>Resa estrattiva gruppi</em></p>
+<pre><code>##        Resa Gruppo
+## 1  13.83871      a
+## 2  18.76667      b
+## 3  17.85000      a
+## 4  23.05000      b
+## 5  19.26667      a
+## 6  20.87097      b
+## 7  17.35484      a
+## 8  22.37097      b
+## 9  21.45000      a
+## 10 19.40323      b</code></pre>
+<p>che consiste nelle <span class="math inline">\(10\)</span> misure sperimentali della <em>Resa estrattiva</em> considerate nei
+paragrafi precedenti a cui è aggiunta una variabile qualitativa (fattore a 2 livelli) <em>Gruppo</em> in cui è
+indicato il gruppo (pianta <span class="math inline">\(a\)</span> e pianta <span class="math inline">\(b\)</span>) a cui appartiene la misura i-esima.</p>
+<p>Possiamo rappresentare i dati in 2 colonne (una colonna per pianta) come segue</p>
+<pre><code>##     Resa.a   Resa.b
+## 1 13.83871 18.76667
+## 2 17.85000 23.05000
+## 3 19.26667 20.87097
+## 4 17.35484 22.37097
+## 5 21.45000 19.40323</code></pre>
+<p>Ragionando (colonna per colonna) come fatto nel primo paragrafo, possiamo modellizzare le 5 misure per ogni gruppo come
+<span class="math display">\[
+y_{ia}=\mu_a+\epsilon_{ia} \qquad y_{i5}=\mu_b+\epsilon_{ib}
+\]</span>
+dove <span class="math inline">\(\mu_a\)</span> e <span class="math inline">\(\mu_b\)</span> sono rispettivamente la media “vera” della resa estrattiva della pianta <span class="math inline">\(a\)</span> e la media “vera” della resa estrattiva della pianta <span class="math inline">\(b\)</span> e
+<span class="math display">\[
+\epsilon_{ia}\sim N(0,\sigma_a^2) \qquad  \epsilon_{ib}\sim N(0,\sigma_b^2)
+\]</span>
+indipendenti.</p>
+<div id="varianze-sigma2_a-e-sigma2_b-note" class="section level4" number="2.1.3.1">
+<h4><span class="header-section-number">2.1.3.1</span> Varianze <span class="math inline">\(\sigma^2_a\)</span> e <span class="math inline">\(\sigma^2_b\)</span> note</h4>
+<p>Una stima puntuale di <span class="math inline">\(\mu_a\)</span> e <span class="math inline">\(\mu_b\)</span> è data rispettivamente da
+<span class="math display">\[
+\bar y_a = \frac{1}{m_a}\sum_{i=1}^{m_a} y_{aj} \qquad 
+\bar y_b = \frac{1}{m_b}\sum_{i=1}^{m_b} y_{bj}
+\]</span></p>
+<p>Si può provare che
+<span class="math display">\[
+\frac{(\bar y_a - \bar y_b)-(\mu_a-\mu_b)}{\sqrt{\sigma^2_a/m_a+\sigma^2_b/m_b}} \sim N(0,1)
+\]</span>
+Si può applicare quanto detto nel primo paragrafo e si usa il <em>z-test</em> per valutare la differenza delle medie</p>
+</div>
+<div id="varianze-sigma2_a-e-sigma2_b-non-note" class="section level4" number="2.1.3.2">
+<h4><span class="header-section-number">2.1.3.2</span> Varianze <span class="math inline">\(\sigma^2_a\)</span> e <span class="math inline">\(\sigma^2_b\)</span> non note</h4>
+<p>Se le varianze non sono note, si deve stimare anche la varianza e in questo si può usare la media ponderata delle varianze dei due campioni che è uno stimatore migliore delle singole varianze di ciascun campione.
+Introduciamo la <em>varianza combinata</em>
+<span class="math display">\[
+s_c^2 = \frac{(m_a+1)s_a^2+(m_b+1)s_b^2}{m_a+m_b-2}.
+\]</span></p>
+<p>Si può dimostrare che se <span class="math inline">\(\sigma^2_a=\sigma^2_b\)</span></p>
+<p><span class="math display">\[
+\frac{(\bar y_a - \bar y_b)-(\mu_a-\mu_b)}{s_c\sqrt{1/m_a+1/m_b}} \sim t(m_a+m_b-2)
+\]</span></p>
+<p>mentre nel caso in cui non possiamo supporre che le varianze siano uguali i gradi di libertà <span class="math inline">\(\nu\)</span> della distribuzione <span class="math inline">\(t\)</span> possono essere approssimati dalla <em>formula di Welch</em>
+<span class="math display">\[
+\nu \approx \frac{\frac{s^2_a}{m_a}+\frac{s^2_b}{m_b}}{\frac{s^2_a}{m_a^2(m_a-1)}+\frac{s^2_b}{m_b^2(m_b-1)}}
+\]</span>
+e quindi</p>
+<p><span class="math display">\[
+\frac{(\bar y_a - \bar y_b)-(\mu_a-\mu_b)}{s_c\sqrt{1/m_a+1/m_b}} \sim t(\nu)
+\]</span></p>
+<p>I gradi di libertà stimati dalla <em>formula di Welch</em> sono minori dei gradi di libertà nel caso in cui le varianze siano uguali. Il test risulta quindi “meno potente nel distinguere le medie”.<br />
+Vediamo quanto detto con il nostro esempio.</p>
+<p>Per eseguire il test si procede come segue: una volta caricato il dataset bisogna definire la natura delle variabili (la variabile <em>Gruppo</em> è qualitativa mentre la variabile <span class="math inline">\(Resa\)</span> è quantitativa) selezionando in Dati/Variabili/Variabili quantitaive <em>Gruppo</em> come variabile qualitativa.</p>
+<p>Nel menù Statistica inferenziale/Test media si sceglie il caso di due popolazioni e si seleziona la pagina Test:dati indipendenti. Non conoscendo a priori le varianze si clicca su <em>Varianza non nota</em>, e quindi scegliere l’opzione Varianze uguali/Varianze non uguali a seconda del caso (nel paragrafo successivo descriviamo un test per la verifica dell’uguaglianza delle variabili).
+Si fissa la significatività <span class="math inline">\(\alpha\)</span>, ad esempio <span class="math inline">\(\alpha = 0.05\)</span> e si prosegue come già visto (figura a sinistra caso varianze uguali, figura a destra varianze non uguali)</p>
+<p><img src="Immagini/Inferenziale/t_test_indip_1.png" width="50%" /><img src="Immagini/Inferenziale/t_test_indip_2.png" width="50%" /></p>
+<p>I gradi di libertà stimati dalla <em>formula di Welch</em> sono <span class="math inline">\(\nu = 6 . 924\)</span> (figura a destra) minori di <span class="math inline">\(8\)</span> (gradi di libertà
+nel caso in cui le varianze siano uguali). Come già osservato il test è quindi “meno potente nel distinguere le medie”.
+Questo lo si nota dal valore del <em>p-value</em> che risulta maggiore e dall’intervallo di confidenza che risulta più ampio.</p>
+<div id="f-test" class="section level5" number="2.1.3.2.1">
+<h5><span class="header-section-number">2.1.3.2.1</span> F-test</h5>
+<p>Per quanto appena visto abbiamo bisogno di verificare l’ipotesi di uguaglianza delle varianze dei due campioni.</p>
+<p>E’ nota la distribuzione del rapporto tra la stima delle varianze e le varianze di popolazione:
+<span class="math display">\[
+\frac{s^2_a/\sigma^2_a}{s^2_b/\sigma^2_b} \sim F(m_a-1,m_b-1)
+\]</span>
+Si tratta della distribuzione F di Fisher (in figura per alcune combinazioni di gradi di libertà)</p>
+<p><img src="Immagini/Inferenziale/distr_f.png" width="50%" style="display: block; margin: auto;" /></p>
+<p>Ragionando in maniera analoga a quanto fatto nel capitolo per i test <span class="math inline">\(t\)</span> e <span class="math inline">\(z\)</span> possiamo eseguire il cosiddetto <span class="math inline">\(F-test\)</span> delle varianze
+<span class="math display">\[
+H_0: \sigma^2_a=\sigma^2_b  \quad \rm{vs} \quad H_1: \sigma^2_a \neq \sigma^2_b 
+\]</span>
+L’intervallo di confidenza è definito</p>
+<p><span class="math display">\[
+\frac{s^2_a}{s^2_b}\frac{1}{f_{\alpha/2}} \leq \frac{\sigma^2_a}{\sigma^2_b} \leq 
+\frac{s^2_a}{s^2_b}\frac{1}{f_{1-\alpha/2}}
+\]</span>
+dove <span class="math inline">\(f_{\alpha/2}\)</span> indica il quantile di ordine <span class="math inline">\(1-\alpha/2\)</span> della distribuzione <span class="math inline">\(F(m_a-1,m_b-1)\)</span>,
+i.e. <span class="math inline">\(\mathbb{P}[f \geq f_{\alpha/2}]=\alpha/2\)</span>, <span class="math inline">\(f\sim F(m_a-1,m_b-1)\)</span>.</p>
+<p>Per meglio comprendere, vediamo come eseguire il test.<br />
+Nel menù Statistica inferenziale/Test test varianza:due popolazioni si fissa la significatività <span class="math inline">\(\alpha\)</span>, ad esempio <span class="math inline">\(\alpha = 0.05\)</span>.
+Abbiamo evidenza statistica per rifiutare <span class="math inline">\(H_0\)</span> se la linea verde (che indica il valore <span class="math inline">\(s_a^2/s_b^2\)</span> calcolato dal nostro campione) è nella <em>Regione Critica</em>, ossia cade nella regione blu. In caso contrario accettiamo <span class="math inline">\(H_0\)</span> non avendo evidenza statistica per rifiutarla.</p>
+<p><img src="Immagini/Inferenziale/f_test.png" width="50%" style="display: block; margin: auto;" /></p>
+<p>Si ottengono il valore del <em>p-value</em> e gli estremi dell’<em>intervallo di confidenza</em>.</p>
+<p>Si noti che in questo caso stiamo verificando l’ipotesi nulla che postula che il rapporto tra le varianze è uguale a 1. Ragionando per intervallo di confidenza abbiamo evidenza statistica per rifiutare <span class="math inline">\(H_0\)</span> se tale intervallo non contiene <span class="math inline">\(1\)</span>, in caso contrario non abbiamo evidenza per rifiutare <span class="math inline">\(H_0\)</span>.</p>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="statistica-descrittiva.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="regressione-lineare-semplice.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": null,
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": null,
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["dispense_modunivar.pdf"],
+"toc": {
+"collapse": "section"
+},
+"info": false,
+"search": true
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
