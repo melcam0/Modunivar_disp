@@ -7,12 +7,13 @@
   11pt,
 ]{book}
 \usepackage{lmodern}
-\usepackage{amssymb,amsmath}
+\usepackage{amsmath}
 \usepackage{ifxetex,ifluatex}
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
   \usepackage{textcomp} % provide euro and other symbols
+  \usepackage{amssymb}
 \else % if luatex or xetex
   \usepackage{unicode-math}
   \defaultfontfeatures{Scale=MatchLowercase}
@@ -49,6 +50,7 @@
 \urlstyle{same} % disable monospaced font for URLs
 \usepackage[left=2cm, right=2.5cm, top=2.5cm, bottom=2.5cm]{geometry}
 \usepackage{longtable,booktabs}
+\usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
 \makeatletter
@@ -85,6 +87,9 @@
   \def\equationautorefname{Equazione}
   \def\tableautorefname{Tabella}}
 \usepackage{arydshln}
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
 \usepackage[]{natbib}
 \bibliographystyle{plainnat}
 
@@ -401,7 +406,7 @@ Si noti che grazie al \emph{teorema centrale del limite} è possibile alleggerir
 \hypertarget{varianza-sigma2-nota}{%
 \subsubsection{\texorpdfstring{Varianza \(\sigma^2\) nota}{Varianza \textbackslash sigma\^{}2 nota}}\label{varianza-sigma2-nota}}
 
-In questo paragrafo supponiamo che la varianza \(\sigma^2\) della popolazione sia nota a priori; nel paragrafo successivo ci occuperemo del caso (più frquente) in cui \(\sigma^2\) non sia nota e dunque debba essere stimata.
+In questo paragrafo supponiamo che la varianza \(\sigma^2\) della popolazione sia nota a priori; nel paragrafo successivo ci occuperemo del caso (più frequente) in cui \(\sigma^2\) non sia nota e dunque debba essere stimata.
 
 A partire dal risultato delle \(10\) misure sperimentali del nostro campione possiamo considerare la variabile \(\bar{y}\), definita come la ``media'' delle \(10\) misure
 \[

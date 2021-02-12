@@ -57,7 +57,7 @@ supponiamo che le misure siano tutte indipendenti tra loro e quindi ci poniamo i
 Si noti che grazie al *teorema centrale del limite* è possibile alleggerire le ipotesi nel caso in cui il numero $m$ di osservazioni (la numerosità del campione) è grande, ad esempio $m>30$. In tal caso è sufficiente supporre che le misure siano identicamente distribuite (cioè che abbiano la stessa distribuzione di probabilità, non importa quale) e indipendenti tra loro.
 
 #### Varianza $\sigma^2$ nota
-In questo paragrafo supponiamo che la varianza $\sigma^2$ della popolazione sia nota a priori; nel paragrafo successivo ci occuperemo del caso (più frquente) in cui $\sigma^2$ non sia nota e dunque debba essere stimata.
+In questo paragrafo supponiamo che la varianza $\sigma^2$ della popolazione sia nota a priori; nel paragrafo successivo ci occuperemo del caso (più frequente) in cui $\sigma^2$ non sia nota e dunque debba essere stimata.
 
 A partire dal risultato delle $10$ misure sperimentali del nostro campione possiamo considerare la variabile $\bar{y}$, definita come la "media" delle $10$ misure
 $$
