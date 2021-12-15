@@ -1,5 +1,5 @@
 bookdown::gitbook:
-  css: style.css
+  css: book.css
   config:
     sharing: null
     info: no
@@ -7,7 +7,7 @@ bookdown::gitbook:
     toc:
       collapse: section
       before: |
-        <li><a href="./">MODUNIVAR</a></li>
+        <li><a href="https://istrsetup.netlify.app/">MODUNIVAR SetUp</a></li>
     download: ["pdf"]
     search: yes
 bookdown::pdf_book:
