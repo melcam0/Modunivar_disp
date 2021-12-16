@@ -1,6 +1,6 @@
 ---
 title: "Dispense modulo univariata"
-subtitle: ""
+subtitle: "Statistica univariata, descrittiva e inferenziale"
 author: "Giorgio Marrubini e Camillo Melzi"
 date: ''
 #output: pdf_document

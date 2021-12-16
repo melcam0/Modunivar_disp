@@ -7,6 +7,13 @@
   11pt,
 ]{book}
 \title{Dispense modulo univariata}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{Statistica univariata, descrittiva e inferenziale}
 \author{Giorgio Marrubini e Camillo Melzi}
 \date{}
 

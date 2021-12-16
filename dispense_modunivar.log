@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.3.23)  15 DEC 2021 15:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.3.23)  16 DEC 2021 12:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -23,6 +23,11 @@ File: bk11.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
+)
+(c:/Users/Camillo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbo
+x.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count188
 )
 (c:/Users/Camillo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.
 sty
@@ -49,13 +54,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 ty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count188
+\inf@bad=\count189
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count189
-\leftroot@=\count190
+\uproot@=\count190
+\leftroot@=\count191
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count191
-\DOTSCASE@=\count192
+\classnum@=\count192
+\DOTSCASE@=\count193
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
@@ -64,15 +69,15 @@ LaTeX Info: Redefining \cdots on input line 620.
 \big@size=\dimen141
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count193
-\c@MaxMatrixCols=\count194
+\macc@depth=\count194
+\c@MaxMatrixCols=\count195
 \dotsspace@=\muskip16
-\c@parentequation=\count195
-\dspbrk@lvl=\count196
+\c@parentequation=\count196
+\dspbrk@lvl=\count197
 \tag@help=\toks16
-\row@=\count197
-\column@=\count198
-\maxfields@=\count199
+\row@=\count198
+\column@=\count199
+\maxfields@=\count266
 \andhelp@=\toks17
 \eqnshift@=\dimen142
 \alignsep@=\dimen143
@@ -247,8 +252,8 @@ ons.sty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
 \@linkdim=\dimen148
-\Hy@linkcounter=\count266
-\Hy@pagecounter=\count267
+\Hy@linkcounter=\count267
+\Hy@pagecounter=\count268
 
 (c:/Users/Camillo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.
 def
@@ -269,7 +274,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 mds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count268
+\Hy@SavedSpaceFactor=\count269
 
 (c:/Users/Camillo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.d
 ef
@@ -285,7 +290,7 @@ Package hyperref Info: Plain pages OFF on input line 4207.
 Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4445.
-\c@Hy@tempcnt=\count269
+\c@Hy@tempcnt=\count270
 (c:/Users/Camillo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
@@ -302,7 +307,7 @@ intcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count270
+\Fld@menulength=\count271
 \Field@Width=\dimen150
 \Fld@charsize=\dimen151
 Package hyperref Info: Hyper figures OFF on input line 6075.
@@ -321,9 +326,9 @@ Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
 ge
 with kernel methods
 )
-\Hy@abspage=\count271
-\c@Item=\count272
-\c@Hfootnote=\count273
+\Hy@abspage=\count272
+\c@Item=\count273
+\c@Hfootnote=\count274
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
@@ -337,8 +342,8 @@ Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
 e
 with kernel methods
 )
-\Fld@listcount=\count274
-\c@bookmark@seq@number=\count275
+\Fld@listcount=\count275
+\c@bookmark@seq@number=\count276
 
 (c:/Users/Camillo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/r
 erunfilecheck.sty
@@ -353,7 +358,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip52
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 52.
+Package hyperref Info: Option `colorlinks' set `true' on input line 59.
 
 (c:/Users/Camillo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/geometry/geometr
 y.sty
@@ -363,9 +368,9 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 ty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count276
-\Gm@cntv=\count277
-\c@Gm@tempcnt=\count278
+\Gm@cnth=\count277
+\Gm@cntv=\count278
+\c@Gm@tempcnt=\count279
 \Gm@bindingoffset=\dimen152
 \Gm@wd@mp=\dimen153
 \Gm@odd@mp=\dimen154
@@ -383,16 +388,16 @@ Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
 \LTright=\skip54
 \LTpre=\skip55
 \LTpost=\skip56
-\LTchunksize=\count279
+\LTchunksize=\count280
 \LTcapwidth=\dimen160
 \LT@head=\box49
 \LT@firsthead=\box50
 \LT@foot=\box51
 \LT@lastfoot=\box52
-\LT@cols=\count280
-\LT@rows=\count281
-\c@LT@tables=\count282
-\c@LT@chunks=\count283
+\LT@cols=\count281
+\LT@rows=\count282
+\c@LT@tables=\count283
+\c@LT@chunks=\count284
 \LT@p@ftn=\toks24
 )
 (c:/Users/Camillo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/booktabs/booktab
@@ -408,12 +413,12 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \cmidrulesep=\dimen168
 \cmidrulekern=\dimen169
 \defaultaddspace=\dimen170
-\@cmidla=\count284
-\@cmidlb=\count285
+\@cmidla=\count285
+\@cmidlb=\count286
 \@aboverulesep=\dimen171
 \@belowrulesep=\dimen172
-\@thisruleclass=\count286
-\@lastruleclass=\count287
+\@thisruleclass=\count287
+\@lastruleclass=\count288
 \@thisrulewidth=\dimen173
 ) (c:/Users/Camillo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/array.st
 y
@@ -427,21 +432,16 @@ Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
 \ar@cellbox=\box54
 ) (c:/Users/Camillo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count288
-\calc@Bcount=\count289
+\calc@Acount=\count289
+\calc@Bcount=\count290
 \calc@Adimen=\dimen176
 \calc@Bdimen=\dimen177
 \calc@Askip=\skip59
 \calc@Bskip=\skip60
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count290
+\calc@Ccount=\count291
 \calc@Cskip=\skip61
-)
-(c:/Users/Camillo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbo
-x.sty
-Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count291
 )
 (c:/Users/Camillo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/mdwtools/footnot
 e.sty
@@ -534,24 +534,24 @@ File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 ) (./dispense_modunivar.aux)
 \openout1 = `dispense_modunivar.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
 
 (c:/Users/Camillo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/eps
 topdf-base.sty
@@ -564,7 +564,7 @@ opdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring ON on input line 99.
+Package hyperref Info: Link coloring ON on input line 106.
 
 (c:/Users/Camillo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/nameref
 .sty
@@ -580,9 +580,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count309
 )
-LaTeX Info: Redefining \ref on input line 99.
-LaTeX Info: Redefining \pageref on input line 99.
-LaTeX Info: Redefining \nameref on input line 99.
+LaTeX Info: Redefining \ref on input line 106.
+LaTeX Info: Redefining \pageref on input line 106.
+LaTeX Info: Redefining \nameref on input line 106.
 (./dispense_modunivar.out) (./dispense_modunivar.out)
 \@outlinefile=\write3
 \openout3 = `dispense_modunivar.out'.
@@ -621,41 +621,41 @@ LaTeX Info: Redefining \nameref on input line 99.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \it@ocap on input line 99.
-LaTeX Info: Redefining \it@ccap on input line 99.
+LaTeX Info: Redefining \it@ocap on input line 106.
+LaTeX Info: Redefining \it@ccap on input line 106.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-01.
+08.
 (c:/Users/Camillo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-01.
+08.
 (c:/Users/Camillo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-101.
+108.
 (c:/Users/Camillo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-101.
+108.
 (c:/Users/Camillo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 101.
+(Font)              <12> on input line 108.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 101.
+(Font)              <8> on input line 108.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 101.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 101
+(Font)              <6> on input line 108.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 108
 .
 
 (c:/Users/Camillo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 101
+LaTeX Font Info:    Trying to load font information for U+msb on input line 108
 .
 
 (c:/Users/Camillo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -679,7 +679,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 ] [7] [8]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
-11.
+18.
 (c:/Users/Camillo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [9] [10]
@@ -688,7 +688,7 @@ Capitolo 1.
 File: Immagini/Descrittiva/1_Resa_estrattiva.png Graphic file (type png)
 <use Immagini/Descrittiva/1_Resa_estrattiva.png>
 Package pdftex.def Info: Immagini/Descrittiva/1_Resa_estrattiva.png  used on in
-put line 273.
+put line 280.
 (pdftex.def)             Requested size: 486.25394pt x 273.51782pt.
 <Immagini/Descrittiva/2_TabelladatiResa estrattiva.png, id=154, 963.6pt x 542.0
 25pt>
@@ -696,7 +696,7 @@ File: Immagini/Descrittiva/2_TabelladatiResa estrattiva.png Graphic file (type
 png)
 <use Immagini/Descrittiva/2_TabelladatiResa estrattiva.png>
 Package pdftex.def Info: Immagini/Descrittiva/2_TabelladatiResa estrattiva.png 
- used on input line 284.
+ used on input line 291.
 (pdftex.def)             Requested size: 486.25394pt x 273.51782pt.
 [11
 
@@ -707,7 +707,7 @@ File: Immagini/Descrittiva/3_SummaryResa_estrattiva.png Graphic file (type png)
 
 <use Immagini/Descrittiva/3_SummaryResa_estrattiva.png>
 Package pdftex.def Info: Immagini/Descrittiva/3_SummaryResa_estrattiva.png  use
-d on input line 295.
+d on input line 302.
 (pdftex.def)             Requested size: 486.25394pt x 273.51782pt.
 <Immagini/Descrittiva/4_Graf_dispers Resa_estrattiva.png, id=162, 963.6pt x 542
 .025pt>
@@ -715,13 +715,13 @@ File: Immagini/Descrittiva/4_Graf_dispers Resa_estrattiva.png Graphic file (typ
 e png)
 <use Immagini/Descrittiva/4_Graf_dispers Resa_estrattiva.png>
 Package pdftex.def Info: Immagini/Descrittiva/4_Graf_dispers Resa_estrattiva.pn
-g  used on input line 307.
+g  used on input line 314.
 (pdftex.def)             Requested size: 486.25394pt x 273.51782pt.
 <Immagini/Descrittiva/5_IstogResaestrattiva.png, id=163, 963.6pt x 542.025pt>
 File: Immagini/Descrittiva/5_IstogResaestrattiva.png Graphic file (type png)
 <use Immagini/Descrittiva/5_IstogResaestrattiva.png>
 Package pdftex.def Info: Immagini/Descrittiva/5_IstogResaestrattiva.png  used o
-n input line 320.
+n input line 327.
 (pdftex.def)             Requested size: 486.25394pt x 273.51782pt.
 [12 <./Immagini/Descrittiva/2_TabelladatiResa estrattiva.png>] [13 <./Immagini/
 Descrittiva/3_SummaryResa_estrattiva.png> <./Immagini/Descrittiva/4_Graf_disper
@@ -730,7 +730,7 @@ s Resa_estrattiva.png>]
 File: Immagini/Descrittiva/6_BoxplotRestrattiva.png Graphic file (type png)
 <use Immagini/Descrittiva/6_BoxplotRestrattiva.png>
 Package pdftex.def Info: Immagini/Descrittiva/6_BoxplotRestrattiva.png  used on
- input line 331.
+ input line 338.
 (pdftex.def)             Requested size: 486.25394pt x 273.51782pt.
 [14 <./Immagini/Descrittiva/5_IstogResaestrattiva.png>] [15 <./Immagini/Descrit
 tiva/6_BoxplotRestrattiva.png>] [16
@@ -738,7 +738,7 @@ tiva/6_BoxplotRestrattiva.png>] [16
 ]
 Capitolo 2.
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 3
-52.
+59.
 (c:/Users/Camillo/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [17]
@@ -746,22 +746,22 @@ File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 File: Immagini/Inferenziale/misura1.png Graphic file (type png)
 <use Immagini/Inferenziale/misura1.png>
 Package pdftex.def Info: Immagini/Inferenziale/misura1.png  used on input line 
-384.
+391.
 (pdftex.def)             Requested size: 170.18896pt x 117.64568pt.
 <Immagini/Inferenziale/misura2.png, id=207, 585.21074pt x 404.53574pt>
 File: Immagini/Inferenziale/misura2.png Graphic file (type png)
 <use Immagini/Inferenziale/misura2.png>
 Package pdftex.def Info: Immagini/Inferenziale/misura2.png  used on input line 
-385.
+392.
 (pdftex.def)             Requested size: 170.18896pt x 117.64568pt.
 <Immagini/Inferenziale/misura3.png, id=208, 585.21074pt x 404.53574pt>
 File: Immagini/Inferenziale/misura3.png Graphic file (type png)
 <use Immagini/Inferenziale/misura3.png>
 Package pdftex.def Info: Immagini/Inferenziale/misura3.png  used on input line 
-386.
+393.
 (pdftex.def)             Requested size: 170.18896pt x 117.64568pt.
 
-Overfull \hbox (29.17595pt too wide) in paragraph at lines 384--387
+Overfull \hbox (29.17595pt too wide) in paragraph at lines 391--394
 [][] [] [] 
  []
 
@@ -769,7 +769,7 @@ Overfull \hbox (29.17595pt too wide) in paragraph at lines 384--387
 File: Immagini/Inferenziale/probamis.png Graphic file (type png)
 <use Immagini/Inferenziale/probamis.png>
 Package pdftex.def Info: Immagini/Inferenziale/probamis.png  used on input line
- 390.
+ 397.
 (pdftex.def)             Requested size: 243.12581pt x 168.06438pt.
 [18 <./Immagini/Inferenziale/misura1.png> <./Immagini/Inferenziale/misura2.png>
  <./Immagini/Inferenziale/misura3.png> <./Immagini/Inferenziale/probamis.png>]
@@ -777,7 +777,7 @@ Package pdftex.def Info: Immagini/Inferenziale/probamis.png  used on input line
 File: Immagini/Inferenziale/varianza_media.png Graphic file (type png)
 <use Immagini/Inferenziale/varianza_media.png>
 Package pdftex.def Info: Immagini/Inferenziale/varianza_media.png  used on inpu
-t line 421.
+t line 428.
 (pdftex.def)             Requested size: 243.12953pt x 168.06694pt.
 [19 <./Immagini/Inferenziale/varianza_media.png>]
 <Immagini/Inferenziale/simulazione_media.png, id=229, 1030.60031pt x 578.91281p
@@ -785,31 +785,31 @@ t>
 File: Immagini/Inferenziale/simulazione_media.png Graphic file (type png)
 <use Immagini/Inferenziale/simulazione_media.png>
 Package pdftex.def Info: Immagini/Inferenziale/simulazione_media.png  used on i
-nput line 450.
+nput line 457.
 (pdftex.def)             Requested size: 243.11891pt x 136.5657pt.
 <Immagini/Inferenziale/simulazione_media1.png, id=230, 671.91568pt x 403.34473p
 t>
 File: Immagini/Inferenziale/simulazione_media1.png Graphic file (type png)
 <use Immagini/Inferenziale/simulazione_media1.png>
 Package pdftex.def Info: Immagini/Inferenziale/simulazione_media1.png  used on 
-input line 454.
+input line 461.
 (pdftex.def)             Requested size: 170.19305pt x 102.1653pt.
 <Immagini/Inferenziale/simulazione_media2.png, id=231, 671.91568pt x 403.34473p
 t>
 File: Immagini/Inferenziale/simulazione_media2.png Graphic file (type png)
 <use Immagini/Inferenziale/simulazione_media2.png>
 Package pdftex.def Info: Immagini/Inferenziale/simulazione_media2.png  used on 
-input line 455.
+input line 462.
 (pdftex.def)             Requested size: 170.19305pt x 102.1653pt.
 <Immagini/Inferenziale/simulazione_media3.png, id=232, 671.91568pt x 403.34473p
 t>
 File: Immagini/Inferenziale/simulazione_media3.png Graphic file (type png)
 <use Immagini/Inferenziale/simulazione_media3.png>
 Package pdftex.def Info: Immagini/Inferenziale/simulazione_media3.png  used on 
-input line 456.
+input line 463.
 (pdftex.def)             Requested size: 170.19305pt x 102.1653pt.
 
-Overfull \hbox (29.18822pt too wide) in paragraph at lines 454--457
+Overfull \hbox (29.18822pt too wide) in paragraph at lines 461--464
 [][] [] [] 
  []
 
@@ -818,7 +818,7 @@ t>
 File: Immagini/Inferenziale/simulazione_media4.png Graphic file (type png)
 <use Immagini/Inferenziale/simulazione_media4.png>
 Package pdftex.def Info: Immagini/Inferenziale/simulazione_media4.png  used on 
-input line 460.
+input line 467.
 (pdftex.def)             Requested size: 243.13002pt x 145.94868pt.
 
 Underfull \vbox (badness 2478) has occurred while \output is active []
@@ -830,22 +830,22 @@ ini/Inferenziale/simulazione_media3.png>]
 File: Immagini/Inferenziale/intconf1.png Graphic file (type png)
 <use Immagini/Inferenziale/intconf1.png>
 Package pdftex.def Info: Immagini/Inferenziale/intconf1.png  used on input line
- 489.
+ 496.
 (pdftex.def)             Requested size: 170.19305pt x 102.1653pt.
 <Immagini/Inferenziale/intconf2.png, id=244, 671.91568pt x 403.34473pt>
 File: Immagini/Inferenziale/intconf2.png Graphic file (type png)
 <use Immagini/Inferenziale/intconf2.png>
 Package pdftex.def Info: Immagini/Inferenziale/intconf2.png  used on input line
- 490.
+ 497.
 (pdftex.def)             Requested size: 170.19305pt x 102.1653pt.
 <Immagini/Inferenziale/intconf3.png, id=245, 671.91568pt x 403.34473pt>
 File: Immagini/Inferenziale/intconf3.png Graphic file (type png)
 <use Immagini/Inferenziale/intconf3.png>
 Package pdftex.def Info: Immagini/Inferenziale/intconf3.png  used on input line
- 491.
+ 498.
 (pdftex.def)             Requested size: 170.19305pt x 102.1653pt.
 
-Overfull \hbox (29.18822pt too wide) in paragraph at lines 489--492
+Overfull \hbox (29.18822pt too wide) in paragraph at lines 496--499
 [][] [] [] 
  []
 
@@ -856,28 +856,28 @@ tconf3.png>]
 File: Immagini/Inferenziale/test_ip.png Graphic file (type png)
 <use Immagini/Inferenziale/test_ip.png>
 Package pdftex.def Info: Immagini/Inferenziale/test_ip.png  used on input line 
-514.
+521.
 (pdftex.def)             Requested size: 243.12984pt x 136.79393pt.
 <Immagini/Inferenziale/test_ip1.png, id=256, 778.545pt x 402.96pt>
 File: Immagini/Inferenziale/test_ip1.png Graphic file (type png)
 <use Immagini/Inferenziale/test_ip1.png>
 Package pdftex.def Info: Immagini/Inferenziale/test_ip1.png  used on input line
- 518.
+ 525.
 (pdftex.def)             Requested size: 170.1875pt x 88.08578pt.
 <Immagini/Inferenziale/test_ip2.png, id=257, 671.91568pt x 403.34473pt>
 File: Immagini/Inferenziale/test_ip2.png Graphic file (type png)
 <use Immagini/Inferenziale/test_ip2.png>
 Package pdftex.def Info: Immagini/Inferenziale/test_ip2.png  used on input line
- 519.
+ 526.
 (pdftex.def)             Requested size: 170.19305pt x 102.1653pt.
 <Immagini/Inferenziale/test_ip3.png, id=258, 671.91568pt x 403.34473pt>
 File: Immagini/Inferenziale/test_ip3.png Graphic file (type png)
 <use Immagini/Inferenziale/test_ip3.png>
 Package pdftex.def Info: Immagini/Inferenziale/test_ip3.png  used on input line
- 520.
+ 527.
 (pdftex.def)             Requested size: 170.19305pt x 102.1653pt.
 
-Overfull \hbox (29.18266pt too wide) in paragraph at lines 518--521
+Overfull \hbox (29.18266pt too wide) in paragraph at lines 525--528
 [][] [] [] 
  []
 
@@ -887,17 +887,17 @@ Overfull \hbox (29.18266pt too wide) in paragraph at lines 518--521
 <Immagini/Inferenziale/pval.png, id=270, 671.91568pt x 403.34473pt>
 File: Immagini/Inferenziale/pval.png Graphic file (type png)
 <use Immagini/Inferenziale/pval.png>
-Package pdftex.def Info: Immagini/Inferenziale/pval.png  used on input line 541
+Package pdftex.def Info: Immagini/Inferenziale/pval.png  used on input line 548
 .
 (pdftex.def)             Requested size: 243.13002pt x 145.94868pt.
 <Immagini/Inferenziale/pval1.png, id=271, 671.91568pt x 403.34473pt>
 File: Immagini/Inferenziale/pval1.png Graphic file (type png)
 <use Immagini/Inferenziale/pval1.png>
 Package pdftex.def Info: Immagini/Inferenziale/pval1.png  used on input line 54
-2.
+9.
 (pdftex.def)             Requested size: 243.13002pt x 145.94868pt.
 
-Overfull \hbox (2.43576pt too wide) in paragraph at lines 541--543
+Overfull \hbox (2.43576pt too wide) in paragraph at lines 548--550
 [][] [] 
  []
 
@@ -905,14 +905,14 @@ Overfull \hbox (2.43576pt too wide) in paragraph at lines 541--543
 File: Immagini/Inferenziale/test_ip4.png Graphic file (type png)
 <use Immagini/Inferenziale/test_ip4.png>
 Package pdftex.def Info: Immagini/Inferenziale/test_ip4.png  used on input line
- 548.
+ 555.
 (pdftex.def)             Requested size: 243.12074pt x 145.51259pt.
 [23 <./Immagini/Inferenziale/pval.png> <./Immagini/Inferenziale/pval1.png>]
 <Immagini/Inferenziale/test_ip_verfipo.png, id=279, 846.16125pt x 536.0025pt>
 File: Immagini/Inferenziale/test_ip_verfipo.png Graphic file (type png)
 <use Immagini/Inferenziale/test_ip_verfipo.png>
 Package pdftex.def Info: Immagini/Inferenziale/test_ip_verfipo.png  used on inp
-ut line 562.
+ut line 569.
 (pdftex.def)             Requested size: 243.12099pt x 154.00546pt.
 [24 <./Immagini/Inferenziale/test_ip4.png> <./Immagini/Inferenziale/test_ip_ver
 fipo.png>]
@@ -920,28 +920,28 @@ fipo.png>]
 File: Immagini/Inferenziale/student.png Graphic file (type png)
 <use Immagini/Inferenziale/student.png>
 Package pdftex.def Info: Immagini/Inferenziale/student.png  used on input line 
-585.
+592.
 (pdftex.def)             Requested size: 243.1288pt x 194.50304pt.
 [25 <./Immagini/Inferenziale/student.png>]
 <Immagini/Inferenziale/t_test.png, id=297, 816.80156pt x 575.14874pt>
 File: Immagini/Inferenziale/t_test.png Graphic file (type png)
 <use Immagini/Inferenziale/t_test.png>
 Package pdftex.def Info: Immagini/Inferenziale/t_test.png  used on input line 6
-24.
+31.
 (pdftex.def)             Requested size: 243.123pt x 171.19444pt.
 [26 <./Immagini/Inferenziale/t_test.png>]
 <Immagini/Inferenziale/variabili.png, id=305, 791.20593pt x 339.51843pt>
 File: Immagini/Inferenziale/variabili.png Graphic file (type png)
 <use Immagini/Inferenziale/variabili.png>
 Package pdftex.def Info: Immagini/Inferenziale/variabili.png  used on input lin
-e 654.
+e 661.
 (pdftex.def)             Requested size: 243.12234pt x 104.32747pt.
 <Immagini/Inferenziale/t_test_accoppiati.png, id=306, 828.09375pt x 525.46312pt
 >
 File: Immagini/Inferenziale/t_test_accoppiati.png Graphic file (type png)
 <use Immagini/Inferenziale/t_test_accoppiati.png>
 Package pdftex.def Info: Immagini/Inferenziale/t_test_accoppiati.png  used on i
-nput line 661.
+nput line 668.
 (pdftex.def)             Requested size: 243.12306pt x 154.27263pt.
 
 Underfull \vbox (badness 1424) has occurred while \output is active []
@@ -952,16 +952,16 @@ t_accoppiati.png>] [29]
 File: Immagini/Inferenziale/t_test_indip_1.png Graphic file (type png)
 <use Immagini/Inferenziale/t_test_indip_1.png>
 Package pdftex.def Info: Immagini/Inferenziale/t_test_indip_1.png  used on inpu
-t line 755.
+t line 762.
 (pdftex.def)             Requested size: 243.12074pt x 171.60141pt.
 <Immagini/Inferenziale/t_test_indip_2.png, id=329, 813.79031pt x 573.64313pt>
 File: Immagini/Inferenziale/t_test_indip_2.png Graphic file (type png)
 <use Immagini/Inferenziale/t_test_indip_2.png>
 Package pdftex.def Info: Immagini/Inferenziale/t_test_indip_2.png  used on inpu
-t line 756.
+t line 763.
 (pdftex.def)             Requested size: 243.12074pt x 171.37651pt.
 
-Overfull \hbox (2.4172pt too wide) in paragraph at lines 755--757
+Overfull \hbox (2.4172pt too wide) in paragraph at lines 762--764
 [][] [] 
  []
 
@@ -969,7 +969,7 @@ Overfull \hbox (2.4172pt too wide) in paragraph at lines 755--757
 File: Immagini/Inferenziale/distr_f.png Graphic file (type png)
 <use Immagini/Inferenziale/distr_f.png>
 Package pdftex.def Info: Immagini/Inferenziale/distr_f.png  used on input line 
-773.
+780.
 (pdftex.def)             Requested size: 243.12822pt x 165.22795pt.
 [30 <./Immagini/Inferenziale/t_test_indip_1.png> <./Immagini/Inferenziale/t_tes
 t_indip_2.png> <./Immagini/Inferenziale/distr_f.png>]
@@ -977,7 +977,7 @@ t_indip_2.png> <./Immagini/Inferenziale/distr_f.png>]
 File: Immagini/Inferenziale/f_test.png Graphic file (type png)
 <use Immagini/Inferenziale/f_test.png>
 Package pdftex.def Info: Immagini/Inferenziale/f_test.png  used on input line 7
-92.
+99.
 (pdftex.def)             Requested size: 243.123pt x 132.4292pt.
 [31 <./Immagini/Inferenziale/f_test.png>] [32
 
@@ -987,47 +987,47 @@ Capitolo 3.
 File: Immagini/Regressione/01_graf_retta.png Graphic file (type png)
 <use Immagini/Regressione/01_graf_retta.png>
 Package pdftex.def Info: Immagini/Regressione/01_graf_retta.png  used on input 
-line 807.
+line 814.
 (pdftex.def)             Requested size: 243.12915pt x 143.82787pt.
 <Immagini/Regressione/02_graf_dati.png, id=352, 328.22626pt x 143.78719pt>
 File: Immagini/Regressione/02_graf_dati.png Graphic file (type png)
 <use Immagini/Regressione/02_graf_dati.png>
 Package pdftex.def Info: Immagini/Regressione/02_graf_dati.png  used on input l
-ine 826.
+ine 833.
 (pdftex.def)             Requested size: 243.12903pt x 106.50835pt.
 [33 <./Immagini/Regressione/01_graf_retta.png>]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 845.
+(Font)              <14.4> on input line 852.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 845.
+(Font)              <10> on input line 852.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 845.
+(Font)              <7> on input line 852.
 <Immagini/Regressione/04_min_sq.png, id=358, 305.64188pt x 157.33781pt>
 File: Immagini/Regressione/04_min_sq.png Graphic file (type png)
 <use Immagini/Regressione/04_min_sq.png>
 Package pdftex.def Info: Immagini/Regressione/04_min_sq.png  used on input line
- 854.
+ 861.
 (pdftex.def)             Requested size: 243.1287pt x 125.15738pt.
 [34 <./Immagini/Regressione/02_graf_dati.png>]
 <Immagini/Regressione/05_stima_pt.png, id=367, 271.0125pt x 119.69719pt>
 File: Immagini/Regressione/05_stima_pt.png Graphic file (type png)
 <use Immagini/Regressione/05_stima_pt.png>
 Package pdftex.def Info: Immagini/Regressione/05_stima_pt.png  used on input li
-ne 888.
+ne 895.
 (pdftex.def)             Requested size: 243.13568pt x 107.38492pt.
 [35 <./Immagini/Regressione/04_min_sq.png>]
 <Immagini/Regressione/06_stima_interv.png, id=373, 286.06876pt x 257.46187pt>
 File: Immagini/Regressione/06_stima_interv.png Graphic file (type png)
 <use Immagini/Regressione/06_stima_interv.png>
 Package pdftex.def Info: Immagini/Regressione/06_stima_interv.png  used on inpu
-t line 931.
+t line 938.
 (pdftex.def)             Requested size: 243.13339pt x 218.82004pt.
 [36 <./Immagini/Regressione/05_stima_pt.png>]
 <Immagini/Regressione/07_R_output.png, id=380, 523.20468pt x 352.31625pt>
 File: Immagini/Regressione/07_R_output.png Graphic file (type png)
 <use Immagini/Regressione/07_R_output.png>
 Package pdftex.def Info: Immagini/Regressione/07_R_output.png  used on input li
-ne 937.
+ne 944.
 (pdftex.def)             Requested size: 243.12799pt x 163.71783pt.
 [37 <./Immagini/Regressione/06_stima_interv.png> <./Immagini/Regressione/07_R_o
 utput.png>]
@@ -1035,13 +1035,13 @@ utput.png>]
 File: Immagini/Regressione/08_prev.png Graphic file (type png)
 <use Immagini/Regressione/08_prev.png>
 Package pdftex.def Info: Immagini/Regressione/08_prev.png  used on input line 9
-53.
+60.
 (pdftex.def)             Requested size: 243.1279pt x 104.12437pt.
 <Immagini/Regressione/11_lev.png, id=390, 581.17125pt x 322.95656pt>
 File: Immagini/Regressione/11_lev.png Graphic file (type png)
 <use Immagini/Regressione/11_lev.png>
-Package pdftex.def Info: Immagini/Regressione/11_lev.png  used on input line 97
-7.
+Package pdftex.def Info: Immagini/Regressione/11_lev.png  used on input line 98
+4.
 (pdftex.def)             Requested size: 243.13252pt x 135.10861pt.
 
 Underfull \vbox (badness 1117) has occurred while \output is active []
@@ -1051,7 +1051,7 @@ Underfull \vbox (badness 1117) has occurred while \output is active []
 File: Immagini/Regressione/09_int_conf_prev.png Graphic file (type png)
 <use Immagini/Regressione/09_int_conf_prev.png>
 Package pdftex.def Info: Immagini/Regressione/09_int_conf_prev.png  used on inp
-ut line 995.
+ut line 1002.
 (pdftex.def)             Requested size: 243.12892pt x 167.95332pt.
 <Immagini/Regressione/10_int_conf_prev_numerico.png, id=397, 253.69781pt x 178.
 41656pt>
@@ -1059,7 +1059,7 @@ File: Immagini/Regressione/10_int_conf_prev_numerico.png Graphic file (type png
 )
 <use Immagini/Regressione/10_int_conf_prev_numerico.png>
 Package pdftex.def Info: Immagini/Regressione/10_int_conf_prev_numerico.png  us
-ed on input line 1001.
+ed on input line 1008.
 (pdftex.def)             Requested size: 243.1368pt x 170.98935pt.
 [39 <./Immagini/Regressione/11_lev.png> <./Immagini/Regressione/09_int_conf_pre
 v.png>]
@@ -1067,7 +1067,7 @@ v.png>]
 File: Immagini/Regressione/12_ipotesi1.png Graphic file (type png)
 <use Immagini/Regressione/12_ipotesi1.png>
 Package pdftex.def Info: Immagini/Regressione/12_ipotesi1.png  used on input li
-ne 1017.
+ne 1024.
 (pdftex.def)             Requested size: 243.12506pt x 115.66545pt.
 [40 <./Immagini/Regressione/10_int_conf_prev_numerico.png> <./Immagini/Regressi
 one/12_ipotesi1.png>]
@@ -1075,19 +1075,19 @@ one/12_ipotesi1.png>]
 File: Immagini/Regressione/13_ipotesi2.png Graphic file (type png)
 <use Immagini/Regressione/13_ipotesi2.png>
 Package pdftex.def Info: Immagini/Regressione/13_ipotesi2.png  used on input li
-ne 1026.
+ne 1033.
 (pdftex.def)             Requested size: 243.12361pt x 124.88089pt.
 <Immagini/Regressione/14_ipotesi3.png, id=413, 874.76813pt x 448.67625pt>
 File: Immagini/Regressione/14_ipotesi3.png Graphic file (type png)
 <use Immagini/Regressione/14_ipotesi3.png>
 Package pdftex.def Info: Immagini/Regressione/14_ipotesi3.png  used on input li
-ne 1036.
+ne 1043.
 (pdftex.def)             Requested size: 243.11809pt x 124.6974pt.
 <Immagini/Regressione/15_ipotesi4.png, id=414, 781.41937pt x 424.58624pt>
 File: Immagini/Regressione/15_ipotesi4.png Graphic file (type png)
 <use Immagini/Regressione/15_ipotesi4.png>
 Package pdftex.def Info: Immagini/Regressione/15_ipotesi4.png  used on input li
-ne 1045.
+ne 1052.
 (pdftex.def)             Requested size: 243.13176pt x 132.10626pt.
 [41 <./Immagini/Regressione/13_ipotesi2.png> <./Immagini/Regressione/14_ipotesi
 3.png> <./Immagini/Regressione/15_ipotesi4.png>] [42
@@ -1098,125 +1098,125 @@ Capitolo 4.
 File: Immagini/Anova/01_var_quali.png Graphic file (type png)
 <use Immagini/Anova/01_var_quali.png>
 Package pdftex.def Info: Immagini/Anova/01_var_quali.png  used on input line 10
-82.
+89.
 (pdftex.def)             Requested size: 243.12961pt x 92.05518pt.
 [43]
 <Immagini/Anova/02_bp.png, id=434, 657.95813pt x 432.86719pt>
 File: Immagini/Anova/02_bp.png Graphic file (type png)
 <use Immagini/Anova/02_bp.png>
-Package pdftex.def Info: Immagini/Anova/02_bp.png  used on input line 1086.
+Package pdftex.def Info: Immagini/Anova/02_bp.png  used on input line 1093.
 (pdftex.def)             Requested size: 243.12947pt x 159.95358pt.
 <Immagini/Anova/03_summary.png, id=435, 505.13719pt x 303.38344pt>
 File: Immagini/Anova/03_summary.png Graphic file (type png)
 <use Immagini/Anova/03_summary.png>
-Package pdftex.def Info: Immagini/Anova/03_summary.png  used on input line 1104
+Package pdftex.def Info: Immagini/Anova/03_summary.png  used on input line 1111
 .
 (pdftex.def)             Requested size: 243.13367pt x 146.02513pt.
 [44 <./Immagini/Anova/01_var_quali.png> <./Immagini/Anova/02_bp.png>]
 <Immagini/Anova/04_anova1.png, id=442, 802.49812pt x 413.29407pt>
 File: Immagini/Anova/04_anova1.png Graphic file (type png)
 <use Immagini/Anova/04_anova1.png>
-Package pdftex.def Info: Immagini/Anova/04_anova1.png  used on input line 1141.
+Package pdftex.def Info: Immagini/Anova/04_anova1.png  used on input line 1148.
 
 (pdftex.def)             Requested size: 243.12685pt x 125.2126pt.
 [45 <./Immagini/Anova/03_summary.png>]
 <Immagini/Anova/05_anova2.png, id=448, 451.6875pt x 137.01187pt>
 File: Immagini/Anova/05_anova2.png Graphic file (type png)
 <use Immagini/Anova/05_anova2.png>
-Package pdftex.def Info: Immagini/Anova/05_anova2.png  used on input line 1147.
+Package pdftex.def Info: Immagini/Anova/05_anova2.png  used on input line 1154.
 
 (pdftex.def)             Requested size: 243.13568pt x 73.75114pt.
 <Immagini/Anova/06_normalita.png, id=449, 1003.49907pt x 404.26031pt>
 File: Immagini/Anova/06_normalita.png Graphic file (type png)
 <use Immagini/Anova/06_normalita.png>
 Package pdftex.def Info: Immagini/Anova/06_normalita.png  used on input line 11
-60.
+67.
 (pdftex.def)             Requested size: 291.75757pt x 117.53474pt.
 <Immagini/Anova/07_omo1.png, id=450, 569.12625pt x 152.82094pt>
 File: Immagini/Anova/07_omo1.png Graphic file (type png)
 <use Immagini/Anova/07_omo1.png>
-Package pdftex.def Info: Immagini/Anova/07_omo1.png  used on input line 1173.
+Package pdftex.def Info: Immagini/Anova/07_omo1.png  used on input line 1180.
 (pdftex.def)             Requested size: 229.44408pt x 61.60997pt.
 [46 <./Immagini/Anova/04_anova1.png> <./Immagini/Anova/05_anova2.png> <./Immagi
 ni/Anova/06_normalita.png>]
 <Immagini/Anova/08_omo2.png, id=458, 590.205pt x 170.13562pt>
 File: Immagini/Anova/08_omo2.png Graphic file (type png)
 <use Immagini/Anova/08_omo2.png>
-Package pdftex.def Info: Immagini/Anova/08_omo2.png  used on input line 1181.
+Package pdftex.def Info: Immagini/Anova/08_omo2.png  used on input line 1188.
 (pdftex.def)             Requested size: 229.44054pt x 66.13974pt.
 <Immagini/Anova/09_omo3.png, id=459, 579.66562pt x 177.66376pt>
 File: Immagini/Anova/09_omo3.png Graphic file (type png)
 <use Immagini/Anova/09_omo3.png>
-Package pdftex.def Info: Immagini/Anova/09_omo3.png  used on input line 1189.
+Package pdftex.def Info: Immagini/Anova/09_omo3.png  used on input line 1196.
 (pdftex.def)             Requested size: 229.43861pt x 70.32144pt.
 <Immagini/Anova/10_omo4.png, id=460, 582.67688pt x 157.33781pt>
 File: Immagini/Anova/10_omo4.png Graphic file (type png)
 <use Immagini/Anova/10_omo4.png>
-Package pdftex.def Info: Immagini/Anova/10_omo4.png  used on input line 1197.
+Package pdftex.def Info: Immagini/Anova/10_omo4.png  used on input line 1204.
 (pdftex.def)             Requested size: 229.43912pt x 61.95448pt.
 <Immagini/Anova/11_omo5.png, id=461, 590.205pt x 222.07968pt>
 File: Immagini/Anova/11_omo5.png Graphic file (type png)
 <use Immagini/Anova/11_omo5.png>
-Package pdftex.def Info: Immagini/Anova/11_omo5.png  used on input line 1205.
+Package pdftex.def Info: Immagini/Anova/11_omo5.png  used on input line 1212.
 (pdftex.def)             Requested size: 229.44054pt x 86.33286pt.
 [47 <./Immagini/Anova/07_omo1.png> <./Immagini/Anova/08_omo2.png> <./Immagini/A
 nova/09_omo3.png> <./Immagini/Anova/10_omo4.png> <./Immagini/Anova/11_omo5.png>
 ]
 
 LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 1
-269.
+276.
 
 
 LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 1
-269.
+276.
 
 
 LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 1
-269.
+276.
 
 
 LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 1
-269.
+276.
 
 [48]
 <Immagini/Anova/12_variab_quali.png, id=476, 487.8225pt x 209.28188pt>
 File: Immagini/Anova/12_variab_quali.png Graphic file (type png)
 <use Immagini/Anova/12_variab_quali.png>
 Package pdftex.def Info: Immagini/Anova/12_variab_quali.png  used on input line
- 1300.
+ 1307.
 (pdftex.def)             Requested size: 243.12907pt x 104.30536pt.
 [49 <./Immagini/Anova/12_variab_quali.png>]
 <Immagini/Anova/13_anova2.png, id=484, 797.22844pt x 370.38374pt>
 File: Immagini/Anova/13_anova2.png Graphic file (type png)
 <use Immagini/Anova/13_anova2.png>
-Package pdftex.def Info: Immagini/Anova/13_anova2.png  used on input line 1304.
+Package pdftex.def Info: Immagini/Anova/13_anova2.png  used on input line 1311.
 
 (pdftex.def)             Requested size: 243.1239pt x 112.95274pt.
 <Immagini/Anova/14_anova2.png, id=485, 793.46437pt x 364.36125pt>
 File: Immagini/Anova/14_anova2.png Graphic file (type png)
 <use Immagini/Anova/14_anova2.png>
-Package pdftex.def Info: Immagini/Anova/14_anova2.png  used on input line 1305.
+Package pdftex.def Info: Immagini/Anova/14_anova2.png  used on input line 1312.
 
 (pdftex.def)             Requested size: 243.1262pt x 111.64429pt.
 
-Overfull \hbox (2.42583pt too wide) in paragraph at lines 1304--1306
+Overfull \hbox (2.42583pt too wide) in paragraph at lines 1311--1313
 [][] [] 
  []
 
 <Immagini/Anova/15_anova2.png, id=486, 791.20593pt x 366.61969pt>
 File: Immagini/Anova/15_anova2.png Graphic file (type png)
 <use Immagini/Anova/15_anova2.png>
-Package pdftex.def Info: Immagini/Anova/15_anova2.png  used on input line 1307.
+Package pdftex.def Info: Immagini/Anova/15_anova2.png  used on input line 1314.
 
 (pdftex.def)             Requested size: 243.12234pt x 112.65517pt.
 <Immagini/Anova/16_Rout_anova2.png, id=487, 632.3625pt x 180.675pt>
 File: Immagini/Anova/16_Rout_anova2.png Graphic file (type png)
 <use Immagini/Anova/16_Rout_anova2.png>
 Package pdftex.def Info: Immagini/Anova/16_Rout_anova2.png  used on input line 
-1308.
+1315.
 (pdftex.def)             Requested size: 243.12743pt x 69.46497pt.
 
-Overfull \hbox (2.42549pt too wide) in paragraph at lines 1307--1310
+Overfull \hbox (2.42549pt too wide) in paragraph at lines 1314--1317
 [][] []
  []
 
@@ -1225,7 +1225,7 @@ Overfull \hbox (2.42549pt too wide) in paragraph at lines 1307--1310
 File: Immagini/Anova/17_graf_interaz__anova2.png Graphic file (type png)
 <use Immagini/Anova/17_graf_interaz__anova2.png>
 Package pdftex.def Info: Immagini/Anova/17_graf_interaz__anova2.png  used on in
-put line 1313.
+put line 1320.
 (pdftex.def)             Requested size: 243.12685pt x 117.91423pt.
 [50 <./Immagini/Anova/13_anova2.png> <./Immagini/Anova/14_anova2.png> <./Immagi
 ni/Anova/15_anova2.png> <./Immagini/Anova/16_Rout_anova2.png> <./Immagini/Anova
@@ -1237,10 +1237,10 @@ Package rerunfilecheck Info: File `dispense_modunivar.out' has not changed.
 (rerunfilecheck)             Checksum: A88BF7E91C1E734ABDC9DCF586ACA950;2404.
  ) 
 Here is how much of TeX's memory you used:
- 13177 strings out of 480951
- 203007 string characters out of 5905210
- 539265 words of memory out of 5000000
- 29996 multiletter control sequences out of 15000+600000
+ 13178 strings out of 480951
+ 203015 string characters out of 5905210
+ 539369 words of memory out of 5000000
+ 29997 multiletter control sequences out of 15000+600000
  476453 words of font info for 81 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  71i,8n,74p,870b,490s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1271,7 +1271,7 @@ ming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/Users/Camillo/AppDa
 ta/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:/Users/Camill
 o/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10
 .pfb>
-Output written on dispense_modunivar.pdf (51 pages, 1620737 bytes).
+Output written on dispense_modunivar.pdf (51 pages, 1622494 bytes).
 PDF statistics:
  599 PDF objects out of 1000 (max. 8388607)
  393 compressed objects within 4 object streams
